@@ -1,0 +1,794 @@
+{
+  "candidates": [
+    {
+      "id": "C001",
+      "topic": "pipeline-atomic-execution",
+      "topic_name": "pipeline-atomic-execution",
+      "type": "development",
+      "primary_module": "data_pipeline",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "流水线段执行原子性",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C002",
+      "topic": "task-schedule-conflict",
+      "topic_name": "task-schedule-conflict",
+      "type": "bugfix",
+      "primary_module": "crawl_task",
+      "secondary_modules": [
+        "retry_queue"
+      ],
+      "data_artifact": "调度触发的任务与重试条目冲突",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C003",
+      "topic": "quality-audit-loop",
+      "topic_name": "quality-audit-loop",
+      "type": "optimization",
+      "primary_module": "quality_check",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "审计阈值与仓储数据",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C004",
+      "topic": "delta-sync-watermark",
+      "topic_name": "delta-sync-watermark",
+      "type": "development",
+      "primary_module": "delta_sync",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "同步水位与增量批次",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C005",
+      "topic": "anti-block-strategy",
+      "topic_name": "anti-block-strategy",
+      "type": "bugfix",
+      "primary_module": "anti_block",
+      "secondary_modules": [
+        "cookie_vault"
+      ],
+      "data_artifact": "反爬触发与凭证轮换",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C006",
+      "topic": "multi-channel-export",
+      "topic_name": "multi-channel-export",
+      "type": "optimization",
+      "primary_module": "export_hub",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "分发校验门禁与多通道",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C007",
+      "topic": "proxy-health-routing",
+      "topic_name": "proxy-health-routing",
+      "type": "development",
+      "primary_module": "proxy_pool",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "代理健康检查与任务分配",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C008",
+      "topic": "retry-queue-dead-letter",
+      "topic_name": "retry-queue-dead-letter",
+      "type": "bugfix",
+      "primary_module": "retry_queue",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "重试上限与死信处理",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C009",
+      "topic": "cron-schedule-reliability",
+      "topic_name": "cron-schedule-reliability",
+      "type": "optimization",
+      "primary_module": "scheduler",
+      "secondary_modules": [
+        "retry_queue"
+      ],
+      "data_artifact": "Cron调度重叠保护",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C010",
+      "topic": "template-market-evolution",
+      "topic_name": "template-market-evolution",
+      "type": "development",
+      "primary_module": "template_mgr",
+      "secondary_modules": [
+        "extract_rule"
+      ],
+      "data_artifact": "模板版本与规则兼容",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C011",
+      "topic": "parse-engine-extensibility",
+      "topic_name": "parse-engine-extensibility",
+      "type": "refactor",
+      "primary_module": "parse_engine",
+      "secondary_modules": [
+        "extract_rule"
+      ],
+      "data_artifact": "解析引擎适配多格式",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C012",
+      "topic": "credential-lifecycle",
+      "topic_name": "credential-lifecycle",
+      "type": "migration",
+      "primary_module": "cookie_vault",
+      "secondary_modules": [
+        "anti_block"
+      ],
+      "data_artifact": "凭证存储格式迁移",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C013",
+      "topic": "rpa-script-orchestration",
+      "topic_name": "rpa-script-orchestration",
+      "type": "development",
+      "primary_module": "rpa_script",
+      "secondary_modules": [
+        "data_pipeline"
+      ],
+      "data_artifact": "RPA脚本编排隔离",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C014",
+      "topic": "proxy-pool-rotation",
+      "topic_name": "proxy-pool-rotation",
+      "type": "optimization",
+      "primary_module": "proxy_pool",
+      "secondary_modules": [
+        "rate_limiter"
+      ],
+      "data_artifact": "代理节点轮换与频控",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C015",
+      "topic": "site-freeze-policy",
+      "topic_name": "site-freeze-policy",
+      "type": "bugfix",
+      "primary_module": "site_profile",
+      "secondary_modules": [
+        "rate_limiter"
+      ],
+      "data_artifact": "站点冻结与其频控策略",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C016",
+      "topic": "cookie-refresh-policy",
+      "topic_name": "cookie-refresh-policy",
+      "type": "development",
+      "primary_module": "cookie_vault",
+      "secondary_modules": [
+        "anti_block"
+      ],
+      "data_artifact": "凭证预刷新策略",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C017",
+      "topic": "data-pipeline-recovery",
+      "topic_name": "data-pipeline-recovery",
+      "type": "refactor",
+      "primary_module": "data_pipeline",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "流水线断点恢复机制",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C018",
+      "topic": "field-extraction-rule",
+      "topic_name": "field-extraction-rule",
+      "type": "optimization",
+      "primary_module": "extract_rule",
+      "secondary_modules": [
+        "parse_engine"
+      ],
+      "data_artifact": "规则冲突与优先级",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C019",
+      "topic": "monitor-alert-escalation",
+      "topic_name": "monitor-alert-escalation",
+      "type": "migration",
+      "primary_module": "log_monitor",
+      "secondary_modules": [
+        "quality_check"
+      ],
+      "data_artifact": "监控告警分级升级",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C020",
+      "topic": "export-crypto-auth",
+      "topic_name": "export-crypto-auth",
+      "type": "development",
+      "primary_module": "export_hub",
+      "secondary_modules": [
+        "data_pipeline"
+      ],
+      "data_artifact": "分发加密与密钥管理",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C021",
+      "topic": "rate-limiting-backoff",
+      "topic_name": "rate-limiting-backoff",
+      "type": "bugfix",
+      "primary_module": "rate_limiter",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "自适应退避与并发控制",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C022",
+      "topic": "pipeline-atomic-execution",
+      "topic_name": "pipeline-atomic-execution",
+      "type": "bugfix",
+      "primary_module": "data_pipeline",
+      "secondary_modules": [
+        "retry_queue"
+      ],
+      "data_artifact": "流水线段失败隔离",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C023",
+      "topic": "task-schedule-conflict",
+      "topic_name": "task-schedule-conflict",
+      "type": "development",
+      "primary_module": "scheduler",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "组调度与批量采集",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C024",
+      "topic": "quality-audit-loop",
+      "topic_name": "quality-audit-loop",
+      "type": "bugfix",
+      "primary_module": "quality_check",
+      "secondary_modules": [
+        "log_monitor"
+      ],
+      "data_artifact": "审计结果与监控事件联动",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C025",
+      "topic": "delta-sync-watermark",
+      "topic_name": "delta-sync-watermark",
+      "type": "bugfix",
+      "primary_module": "delta_sync",
+      "secondary_modules": [
+        "export_hub"
+      ],
+      "data_artifact": "同步水位回退与分发一致性",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C026",
+      "topic": "anti-block-strategy",
+      "topic_name": "anti-block-strategy",
+      "type": "optimization",
+      "primary_module": "anti_block",
+      "secondary_modules": [
+        "proxy_pool"
+      ],
+      "data_artifact": "对抗策略效果评估闭环",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C027",
+      "topic": "multi-channel-export",
+      "topic_name": "multi-channel-export",
+      "type": "bugfix",
+      "primary_module": "export_hub",
+      "secondary_modules": [
+        "quality_check"
+      ],
+      "data_artifact": "分发前校验门禁绕过修复",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C028",
+      "topic": "proxy-health-routing",
+      "topic_name": "proxy-health-routing",
+      "type": "bugfix",
+      "primary_module": "proxy_pool",
+      "secondary_modules": [
+        "log_monitor"
+      ],
+      "data_artifact": "代理健康检测延迟",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C029",
+      "topic": "retry-queue-dead-letter",
+      "topic_name": "retry-queue-dead-letter",
+      "type": "optimization",
+      "primary_module": "retry_queue",
+      "secondary_modules": [
+        "scheduler"
+      ],
+      "data_artifact": "死信自动归档与恢复",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C030",
+      "topic": "cron-schedule-reliability",
+      "topic_name": "cron-schedule-reliability",
+      "type": "development",
+      "primary_module": "scheduler",
+      "secondary_modules": [
+        "log_monitor"
+      ],
+      "data_artifact": "调度执行历史可观测",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C031",
+      "topic": "template-market-evolution",
+      "topic_name": "template-market-evolution",
+      "type": "bugfix",
+      "primary_module": "template_mgr",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "模板引用计数与安全删除",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C032",
+      "topic": "parse-engine-extensibility",
+      "topic_name": "parse-engine-extensibility",
+      "type": "development",
+      "primary_module": "parse_engine",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "多引擎解析结果聚合",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C033",
+      "topic": "credential-lifecycle",
+      "topic_name": "credential-lifecycle",
+      "type": "optimization",
+      "primary_module": "cookie_vault",
+      "secondary_modules": [
+        "extract_rule"
+      ],
+      "data_artifact": "凭证与抽取规则的协同失效",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C034",
+      "topic": "rpa-script-orchestration",
+      "topic_name": "rpa-script-orchestration",
+      "type": "bugfix",
+      "primary_module": "rpa_script",
+      "secondary_modules": [
+        "template_mgr"
+      ],
+      "data_artifact": "脚本版本回滚",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C035",
+      "topic": "site-freeze-policy",
+      "topic_name": "site-freeze-policy",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [
+        "cookie_vault"
+      ],
+      "data_artifact": "站点冻结与凭证联动",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C036",
+      "topic": "pipeline-atomic-execution",
+      "topic_name": "pipeline-atomic-execution",
+      "type": "development",
+      "primary_module": "data_pipeline",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "流水线段执行原子性",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C037",
+      "topic": "task-schedule-conflict",
+      "topic_name": "task-schedule-conflict",
+      "type": "bugfix",
+      "primary_module": "crawl_task",
+      "secondary_modules": [
+        "retry_queue"
+      ],
+      "data_artifact": "调度触发的任务与重试条目冲突",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C038",
+      "topic": "quality-audit-loop",
+      "topic_name": "quality-audit-loop",
+      "type": "optimization",
+      "primary_module": "quality_check",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "审计阈值与仓储数据",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C039",
+      "topic": "delta-sync-watermark",
+      "topic_name": "delta-sync-watermark",
+      "type": "development",
+      "primary_module": "delta_sync",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "同步水位与增量批次",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C040",
+      "topic": "anti-block-strategy",
+      "topic_name": "anti-block-strategy",
+      "type": "bugfix",
+      "primary_module": "anti_block",
+      "secondary_modules": [
+        "cookie_vault"
+      ],
+      "data_artifact": "反爬触发与凭证轮换",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C041",
+      "topic": "multi-channel-export",
+      "topic_name": "multi-channel-export",
+      "type": "optimization",
+      "primary_module": "export_hub",
+      "secondary_modules": [
+        "result_store"
+      ],
+      "data_artifact": "分发校验门禁与多通道",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C042",
+      "topic": "proxy-health-routing",
+      "topic_name": "proxy-health-routing",
+      "type": "development",
+      "primary_module": "proxy_pool",
+      "secondary_modules": [
+        "crawl_task"
+      ],
+      "data_artifact": "代理健康检查与任务分配",
+      "status": "active",
+      "notes": ""
+    },
+    {
+      "id": "C043",
+      "topic": "reserve-0",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C044",
+      "topic": "reserve-1",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C045",
+      "topic": "reserve-2",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C046",
+      "topic": "reserve-3",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C047",
+      "topic": "reserve-4",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C048",
+      "topic": "reserve-5",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C049",
+      "topic": "reserve-6",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C050",
+      "topic": "reserve-7",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C051",
+      "topic": "reserve-8",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C052",
+      "topic": "reserve-9",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C053",
+      "topic": "reserve-10",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C054",
+      "topic": "reserve-11",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C055",
+      "topic": "reserve-12",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C056",
+      "topic": "reserve-13",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C057",
+      "topic": "reserve-14",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C058",
+      "topic": "reserve-15",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C059",
+      "topic": "reserve-16",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C060",
+      "topic": "reserve-17",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C061",
+      "topic": "reserve-18",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C062",
+      "topic": "reserve-19",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C063",
+      "topic": "reserve-20",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    },
+    {
+      "id": "C064",
+      "topic": "reserve-21",
+      "topic_name": "备用候选",
+      "type": "development",
+      "primary_module": "site_profile",
+      "secondary_modules": [],
+      "data_artifact": "备用",
+      "status": "reserve",
+      "notes": "保留候选题位，必要时补充"
+    }
+  ],
+  "total": 64,
+  "active": 42
+}

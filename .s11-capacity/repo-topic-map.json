@@ -1,0 +1,4671 @@
+{
+  "profile": "gsb-semantic-v2",
+  "version": 1,
+  "difficulty_contract_version": 2,
+  "type_policy": "capacity-first",
+  "domain": "数据工程",
+  "subdirection": "数据采集、爬虫与RPA",
+  "app_name": "采集工坊 · 爬虫与RPA开发平台",
+  "total_plans": 35,
+  "topics": [
+    {
+      "id": "anti-block-strategy",
+      "name": "anti block strategy",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "anti_block",
+        "cookie_vault",
+        "proxy_pool"
+      ],
+      "domain_results": [
+        "anti_block-anti block strategy 数据产物"
+      ],
+      "evidence": [
+        "anti-block-strategy"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "anti block strategy"
+      ],
+      "allowed_families": [
+        "优化-anti block stra",
+        "Bugfix-anti block stra"
+      ]
+    },
+    {
+      "id": "cookie-refresh-policy",
+      "name": "cookie refresh policy",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "anti_block",
+        "cookie_vault"
+      ],
+      "domain_results": [
+        "cookie_vault-cookie refresh policy 数据产物"
+      ],
+      "evidence": [
+        "cookie-refresh-policy"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "cookie refresh policy"
+      ],
+      "allowed_families": [
+        "新增-cookie refresh "
+      ]
+    },
+    {
+      "id": "credential-lifecycle",
+      "name": "credential lifecycle",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "anti_block",
+        "cookie_vault",
+        "extract_rule"
+      ],
+      "domain_results": [
+        "cookie_vault-credential lifecycle 数据产物"
+      ],
+      "evidence": [
+        "credential-lifecycle"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "credential lifecycle"
+      ],
+      "allowed_families": [
+        "优化-credential life",
+        "迁移-credential life"
+      ]
+    },
+    {
+      "id": "cron-schedule-reliability",
+      "name": "cron schedule reliability",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "log_monitor",
+        "retry_queue",
+        "scheduler"
+      ],
+      "domain_results": [
+        "scheduler-cron schedule reliability 数据产物"
+      ],
+      "evidence": [
+        "cron-schedule-reliability"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "cron schedule reliability"
+      ],
+      "allowed_families": [
+        "优化-cron schedule r",
+        "新增-cron schedule r"
+      ]
+    },
+    {
+      "id": "data-pipeline-recovery",
+      "name": "data pipeline recovery",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "data_pipeline",
+        "result_store"
+      ],
+      "domain_results": [
+        "data_pipeline-data pipeline recovery 数据产物"
+      ],
+      "evidence": [
+        "data-pipeline-recovery"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "data pipeline recovery"
+      ],
+      "allowed_families": [
+        "重构-data pipeline r"
+      ]
+    },
+    {
+      "id": "delta-sync-watermark",
+      "name": "delta sync watermark",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "delta_sync",
+        "export_hub",
+        "result_store"
+      ],
+      "domain_results": [
+        "delta_sync-delta sync watermark 数据产物"
+      ],
+      "evidence": [
+        "delta-sync-watermark"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "delta sync watermark"
+      ],
+      "allowed_families": [
+        "新增-delta sync wate",
+        "Bugfix-delta sync wate"
+      ]
+    },
+    {
+      "id": "export-crypto-auth",
+      "name": "export crypto auth",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "data_pipeline",
+        "export_hub"
+      ],
+      "domain_results": [
+        "export_hub-export crypto auth 数据产物"
+      ],
+      "evidence": [
+        "export-crypto-auth"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "export crypto auth"
+      ],
+      "allowed_families": [
+        "新增-export crypto a"
+      ]
+    },
+    {
+      "id": "field-extraction-rule",
+      "name": "field extraction rule",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "extract_rule",
+        "parse_engine"
+      ],
+      "domain_results": [
+        "extract_rule-field extraction rule 数据产物"
+      ],
+      "evidence": [
+        "field-extraction-rule"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "field extraction rule"
+      ],
+      "allowed_families": [
+        "优化-field extractio"
+      ]
+    },
+    {
+      "id": "monitor-alert-escalation",
+      "name": "monitor alert escalation",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "log_monitor",
+        "quality_check"
+      ],
+      "domain_results": [
+        "log_monitor-monitor alert escalation 数据产物"
+      ],
+      "evidence": [
+        "monitor-alert-escalation"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "monitor alert escalation"
+      ],
+      "allowed_families": [
+        "迁移-monitor alert e"
+      ]
+    },
+    {
+      "id": "multi-channel-export",
+      "name": "multi channel export",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "export_hub",
+        "quality_check",
+        "result_store"
+      ],
+      "domain_results": [
+        "export_hub-multi channel export 数据产物"
+      ],
+      "evidence": [
+        "multi-channel-export"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "multi channel export"
+      ],
+      "allowed_families": [
+        "Bugfix-multi channel e",
+        "优化-multi channel e"
+      ]
+    },
+    {
+      "id": "parse-engine-extensibility",
+      "name": "parse engine extensibility",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "extract_rule",
+        "parse_engine",
+        "result_store"
+      ],
+      "domain_results": [
+        "parse_engine-parse engine extensibility 数据产物"
+      ],
+      "evidence": [
+        "parse-engine-extensibility"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "parse engine extensibility"
+      ],
+      "allowed_families": [
+        "新增-parse engine ex",
+        "重构-parse engine ex"
+      ]
+    },
+    {
+      "id": "pipeline-atomic-execution",
+      "name": "pipeline atomic execution",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "data_pipeline",
+        "result_store",
+        "retry_queue"
+      ],
+      "domain_results": [
+        "data_pipeline-pipeline atomic execution 数据产物"
+      ],
+      "evidence": [
+        "pipeline-atomic-execution"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "pipeline atomic execution"
+      ],
+      "allowed_families": [
+        "Bugfix-pipeline atomic",
+        "新增-pipeline atomic"
+      ]
+    },
+    {
+      "id": "proxy-health-routing",
+      "name": "proxy health routing",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "crawl_task",
+        "log_monitor",
+        "proxy_pool"
+      ],
+      "domain_results": [
+        "proxy_pool-proxy health routing 数据产物"
+      ],
+      "evidence": [
+        "proxy-health-routing"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "proxy health routing"
+      ],
+      "allowed_families": [
+        "新增-proxy health ro",
+        "Bugfix-proxy health ro"
+      ]
+    },
+    {
+      "id": "proxy-pool-rotation",
+      "name": "proxy pool rotation",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "proxy_pool",
+        "rate_limiter"
+      ],
+      "domain_results": [
+        "proxy_pool-proxy pool rotation 数据产物"
+      ],
+      "evidence": [
+        "proxy-pool-rotation"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "proxy pool rotation"
+      ],
+      "allowed_families": [
+        "优化-proxy pool rota"
+      ]
+    },
+    {
+      "id": "quality-audit-loop",
+      "name": "quality audit loop",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "log_monitor",
+        "quality_check",
+        "result_store"
+      ],
+      "domain_results": [
+        "quality_check-quality audit loop 数据产物"
+      ],
+      "evidence": [
+        "quality-audit-loop"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "quality audit loop"
+      ],
+      "allowed_families": [
+        "优化-quality audit l",
+        "Bugfix-quality audit l"
+      ]
+    },
+    {
+      "id": "rate-limiting-backoff",
+      "name": "rate limiting backoff",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "crawl_task",
+        "rate_limiter"
+      ],
+      "domain_results": [
+        "rate_limiter-rate limiting backoff 数据产物"
+      ],
+      "evidence": [
+        "rate-limiting-backoff"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "rate limiting backoff"
+      ],
+      "allowed_families": [
+        "Bugfix-rate limiting b"
+      ]
+    },
+    {
+      "id": "retry-queue-dead-letter",
+      "name": "retry queue dead letter",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "crawl_task",
+        "retry_queue",
+        "scheduler"
+      ],
+      "domain_results": [
+        "retry_queue-retry queue dead letter 数据产物"
+      ],
+      "evidence": [
+        "retry-queue-dead-letter"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "retry queue dead letter"
+      ],
+      "allowed_families": [
+        "优化-retry queue dea",
+        "Bugfix-retry queue dea"
+      ]
+    },
+    {
+      "id": "rpa-script-orchestration",
+      "name": "rpa script orchestration",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "data_pipeline",
+        "rpa_script",
+        "template_mgr"
+      ],
+      "domain_results": [
+        "rpa_script-rpa script orchestration 数据产物"
+      ],
+      "evidence": [
+        "rpa-script-orchestration"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "rpa script orchestration"
+      ],
+      "allowed_families": [
+        "Bugfix-rpa script orch",
+        "新增-rpa script orch"
+      ]
+    },
+    {
+      "id": "site-freeze-policy",
+      "name": "site freeze policy",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "cookie_vault",
+        "rate_limiter",
+        "site_profile"
+      ],
+      "domain_results": [
+        "site_profile-site freeze policy 数据产物"
+      ],
+      "evidence": [
+        "site-freeze-policy"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "site freeze policy"
+      ],
+      "allowed_families": [
+        "新增-site freeze pol",
+        "Bugfix-site freeze pol"
+      ]
+    },
+    {
+      "id": "task-schedule-conflict",
+      "name": "task schedule conflict",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "crawl_task",
+        "retry_queue",
+        "scheduler"
+      ],
+      "domain_results": [
+        "crawl_task-task schedule conflict 数据产物",
+        "scheduler-task schedule conflict 数据产物"
+      ],
+      "evidence": [
+        "task-schedule-conflict"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "task schedule conflict"
+      ],
+      "allowed_families": [
+        "新增-task schedule c",
+        "Bugfix-task schedule c"
+      ]
+    },
+    {
+      "id": "template-market-evolution",
+      "name": "template market evolution",
+      "family": "数据采集与爬虫",
+      "domain_objects": [
+        "crawl_task",
+        "extract_rule",
+        "template_mgr"
+      ],
+      "domain_results": [
+        "template_mgr-template market evolution 数据产物"
+      ],
+      "evidence": [
+        "template-market-evolution"
+      ],
+      "seat_capacity": 3,
+      "keywords": [
+        "template market evolution"
+      ],
+      "allowed_families": [
+        "新增-template market",
+        "Bugfix-template market"
+      ]
+    }
+  ],
+  "task_plan": [
+    {
+      "sequence": 1,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "pipeline-atomic-execution",
+      "topic_name": "pipeline atomic execution",
+      "family": "新增-pipeline atomic",
+      "angle": "pipeline atomic execution场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增data_pipeline配置数据的采集data_pipeline数据能力，系统尚未形成data_pipeline结果链路",
+        "business_result": "data_pipeline结果可被下游模块消费",
+        "prompt_main_request": "新增data_pipeline配置数据的采集data_pipeline数据能力，当前尚未形成该链路，缺少data_pipeline结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/data_pipeline.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "data_pipeline配置数据",
+          "operation": "采集data_pipeline数据",
+          "output": "data_pipeline结果",
+          "observable": "data_pipeline采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将data_pipeline替换为通用CRUD配置表而未实现采集data_pipeline数据的流程，其跨模块数据流转约束将失效，data_pipeline采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "transaction_consistency",
+              "statement": "流水线执行结果与仓储批次必须同时可见",
+              "failure_if_omitted": "只写状态不写批次让下游读不到数据"
+            },
+            {
+              "kind": "failure_recovery",
+              "statement": "流水线中断后只能从未完成段继续，不能覆盖已完成结果",
+              "failure_if_omitted": "重复执行会覆盖已验证的正确批次"
+            }
+          ],
+          "why_interact": "约束'流水线执行结果与仓储批次必须同时可见'与'流水线中断后只能从未完成段继续，不能覆盖已完成结果'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足流水线执行结果与仓储批次必须同时可见和流水线中断后只能从未完成段继续，不能覆盖已完成结果"
+        },
+        "module_integration": {
+          "primary_module": "data_pipeline",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "流水线段执行原子性",
+              "relationship": "result_store消费data_pipeline产生的流水线段执行原子性数据产物"
+            }
+          ],
+          "data_artifact": "data_pipeline-pipeline atomic execution 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "中断恢复时是保留已完成段结果只重试失败段，还是全部重置重新执行，两种方案对已发布数据版本的影响不同，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "data_pipeline",
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 64
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "data_pipeline",
+          "role": "producer",
+          "artifact": "data_pipeline-pipeline atomic execution 数据产物",
+          "behavior": "data_pipeline服务维护pipeline atomic execution核心业务数据，产生data_pipeline-pipeline atomic execution 数据产物",
+          "path": "backend/app/services/data_pipeline.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "流水线段执行原子性",
+          "behavior": "result_store消费data_pipeline产生的data_pipeline-pipeline atomic execution 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 2,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "task-schedule-conflict",
+      "topic_name": "task schedule conflict",
+      "family": "Bugfix-task schedule c",
+      "angle": "task schedule conflict场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集crawl_task数据时crawl_task结果出现不一致的缺陷",
+        "business_result": "crawl_task结果可被下游模块消费",
+        "prompt_main_request": "修复采集crawl_task数据时crawl_task结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/crawl_task.py",
+          "backend/app/services/retry_queue.py"
+        ],
+        "domain_chain": {
+          "input": "crawl_task配置数据",
+          "operation": "采集crawl_task数据",
+          "output": "crawl_task结果",
+          "observable": "crawl_task采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将crawl_task替换为通用CRUD配置表而未实现采集crawl_task数据的流程，其跨模块数据流转约束将失效，crawl_task采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "dedup_constraint",
+              "statement": "同一采集目标不应被重复调度产生多条运行中任务",
+              "failure_if_omitted": "重复任务会造成资源浪费和数据冗余"
+            },
+            {
+              "kind": "failure_trace",
+              "statement": "调度失败任务必须保留原始调度记录并写入重试队列",
+              "failure_if_omitted": "丢失失败原因会让重试策略无法正确判断"
+            }
+          ],
+          "why_interact": "约束'同一采集目标不应被重复调度产生多条运行中任务'与'调度失败任务必须保留原始调度记录并写入重试队列'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足同一采集目标不应被重复调度产生多条运行中任务和调度失败任务必须保留原始调度记录并写入重试队列"
+        },
+        "module_integration": {
+          "primary_module": "crawl_task",
+          "secondary_modules": [
+            {
+              "name": "retry_queue",
+              "role": "consumer",
+              "artifact": "调度触发的任务与重试条目冲突",
+              "relationship": "retry_queue消费crawl_task产生的调度触发的任务与重试条目冲突数据产物"
+            }
+          ],
+          "data_artifact": "crawl_task-task schedule conflict 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "同一站点有多个调度计划同时触发时，按计划优先级还是创建时间裁决重试队列插入顺序，由设计者决定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "retry_queue",
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "crawl_task",
+          "role": "producer",
+          "artifact": "crawl_task-task schedule conflict 数据产物",
+          "behavior": "crawl_task服务维护task schedule conflict核心业务数据，产生crawl_task-task schedule conflict 数据产物",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        },
+        {
+          "module": "retry_queue",
+          "role": "consumer",
+          "artifact": "调度触发的任务与重试条目冲突",
+          "behavior": "retry_queue消费crawl_task产生的crawl_task-task schedule conflict 数据产物进行后续处理",
+          "path": "backend/app/services/retry_queue.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "quality-audit-loop",
+      "topic_name": "quality audit loop",
+      "family": "优化-quality audit l",
+      "angle": "quality audit loop场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集quality_check数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "quality_check结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集quality_check数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/quality_check.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "quality_check配置数据",
+          "operation": "采集quality_check数据",
+          "output": "quality_check结果",
+          "observable": "quality_check采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将quality_check替换为通用CRUD配置表而未实现采集quality_check数据的流程，其跨模块数据流转约束将失效，quality_check采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "threshold_interaction",
+              "statement": "质量检查上下界必须同时满足才算通过",
+              "failure_if_omitted": "只检查一侧会让异常数据漏过"
+            },
+            {
+              "kind": "data_freshness",
+              "statement": "审计必须消费仓储最新批次而非初始种子数据",
+              "failure_if_omitted": "审计旧数据会导致结论不可靠"
+            }
+          ],
+          "why_interact": "约束'质量检查上下界必须同时满足才算通过'与'审计必须消费仓储最新批次而非初始种子数据'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足质量检查上下界必须同时满足才算通过和审计必须消费仓储最新批次而非初始种子数据"
+        },
+        "module_integration": {
+          "primary_module": "quality_check",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "审计阈值与仓储数据",
+              "relationship": "result_store消费quality_check产生的审计阈值与仓储数据数据产物"
+            }
+          ],
+          "data_artifact": "quality_check-quality audit loop 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "审计不通过时是直接标记批次无效阻断下游，还是保留待修复状态继续统计，影响分发通道可用性，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "quality_check",
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "quality_check",
+          "role": "producer",
+          "artifact": "quality_check-quality audit loop 数据产物",
+          "behavior": "quality_check服务维护quality audit loop核心业务数据，产生quality_check-quality audit loop 数据产物",
+          "path": "backend/app/services/quality_check.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "审计阈值与仓储数据",
+          "behavior": "result_store消费quality_check产生的quality_check-quality audit loop 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 4,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "delta-sync-watermark",
+      "topic_name": "delta sync watermark",
+      "family": "新增-delta sync wate",
+      "angle": "delta sync watermark场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增delta_sync配置数据的采集delta_sync数据能力，系统尚未形成delta_sync结果链路",
+        "business_result": "delta_sync结果可被下游模块消费",
+        "prompt_main_request": "新增delta_sync配置数据的采集delta_sync数据能力，当前尚未形成该链路，缺少delta_sync结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/delta_sync.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "delta_sync配置数据",
+          "operation": "采集delta_sync数据",
+          "output": "delta_sync结果",
+          "observable": "delta_sync采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/delta_sync.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"增量同步 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"delta_sync\"\nREQUIRED_FIELDS = [\"水位编号\", \"源数据集\", \"增量字段\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将delta_sync替换为通用CRUD配置表而未实现采集delta_sync数据的流程，其跨模块数据流转约束将失效，delta_sync采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "watermark_atomicity",
+              "statement": "水位更新和增量批次写入必须原子完成",
+              "failure_if_omitted": "部分成功会导致水位已前进但数据丢失"
+            },
+            {
+              "kind": "catchup_strategy",
+              "statement": "追赶延迟时必须从上次断点水位继续",
+              "failure_if_omitted": "从零重扫会写入重复数据"
+            }
+          ],
+          "why_interact": "约束'水位更新和增量批次写入必须原子完成'与'追赶延迟时必须从上次断点水位继续'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足水位更新和增量批次写入必须原子完成和追赶延迟时必须从上次断点水位继续"
+        },
+        "module_integration": {
+          "primary_module": "delta_sync",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "同步水位与增量批次",
+              "relationship": "result_store消费delta_sync产生的同步水位与增量批次数据产物"
+            }
+          ],
+          "data_artifact": "delta_sync-delta sync watermark 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "遇到追赶延迟时优先追上最新水位还是优先补齐历史缺失区间，影响下游消费连续性，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "delta_sync",
+            "path": "backend/app/services/delta_sync.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "delta_sync",
+          "role": "producer",
+          "artifact": "delta_sync-delta sync watermark 数据产物",
+          "behavior": "delta_sync服务维护delta sync watermark核心业务数据，产生delta_sync-delta sync watermark 数据产物",
+          "path": "backend/app/services/delta_sync.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"增量同步 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"delta_sync\"\nREQUIRED_FIELDS = [\"水位编号\", \"源数据集\", \"增量字段\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "同步水位与增量批次",
+          "behavior": "result_store消费delta_sync产生的delta_sync-delta sync watermark 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 5,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "anti-block-strategy",
+      "topic_name": "anti block strategy",
+      "family": "Bugfix-anti block stra",
+      "angle": "anti block strategy场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集anti_block数据时anti_block结果出现不一致的缺陷",
+        "business_result": "anti_block结果可被下游模块消费",
+        "prompt_main_request": "修复采集anti_block数据时anti_block结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/anti_block.py",
+          "backend/app/services/cookie_vault.py"
+        ],
+        "domain_chain": {
+          "input": "anti_block配置数据",
+          "operation": "采集anti_block数据",
+          "output": "anti_block结果",
+          "observable": "anti_block采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将anti_block替换为通用CRUD配置表而未实现采集anti_block数据的流程，其跨模块数据流转约束将失效，anti_block采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "trigger_accuracy",
+              "statement": "反爬触发必须基于真实成功率判断而非固定阈值",
+              "failure_if_omitted": "误触发会浪费大量有效凭证"
+            },
+            {
+              "kind": "rotation_safety",
+              "statement": "轮换时必须保证至少一条可用凭证仍在池中",
+              "failure_if_omitted": "全部失效会让采集链路完全中断"
+            }
+          ],
+          "why_interact": "约束'反爬触发必须基于真实成功率判断而非固定阈值'与'轮换时必须保证至少一条可用凭证仍在池中'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足反爬触发必须基于真实成功率判断而非固定阈值和轮换时必须保证至少一条可用凭证仍在池中"
+        },
+        "module_integration": {
+          "primary_module": "anti_block",
+          "secondary_modules": [
+            {
+              "name": "cookie_vault",
+              "role": "consumer",
+              "artifact": "反爬触发与凭证轮换",
+              "relationship": "cookie_vault消费anti_block产生的反爬触发与凭证轮换数据产物"
+            }
+          ],
+          "data_artifact": "anti_block-anti block strategy 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "轮换时是先标记旧凭证过期再启用新凭证，还是保留旧凭证逐步降低优先级，影响采集连续性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "anti_block",
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "cookie_vault",
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "anti_block",
+          "role": "producer",
+          "artifact": "anti_block-anti block strategy 数据产物",
+          "behavior": "anti_block服务维护anti block strategy核心业务数据，产生anti_block-anti block strategy 数据产物",
+          "path": "backend/app/services/anti_block.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]"
+        },
+        {
+          "module": "cookie_vault",
+          "role": "consumer",
+          "artifact": "反爬触发与凭证轮换",
+          "behavior": "cookie_vault消费anti_block产生的anti_block-anti block strategy 数据产物进行后续处理",
+          "path": "backend/app/services/cookie_vault.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 6,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "multi-channel-export",
+      "topic_name": "multi channel export",
+      "family": "优化-multi channel e",
+      "angle": "multi channel export场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集export_hub数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "export_hub结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集export_hub数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/export_hub.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "export_hub配置数据",
+          "operation": "采集export_hub数据",
+          "output": "export_hub结果",
+          "observable": "export_hub采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将export_hub替换为通用CRUD配置表而未实现采集export_hub数据的流程，其跨模块数据流转约束将失效，export_hub采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "dispatch_gate",
+              "statement": "只有校验通过的批次才能进入分发通道",
+              "failure_if_omitted": "未校验数据会污染下游分析系统"
+            },
+            {
+              "kind": "delivery_tracking",
+              "statement": "分发失败时必须保留完整分发日志以便追查",
+              "failure_if_omitted": "无日志会让失败不可追溯"
+            }
+          ],
+          "why_interact": "约束'只有校验通过的批次才能进入分发通道'与'分发失败时必须保留完整分发日志以便追查'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足只有校验通过的批次才能进入分发通道和分发失败时必须保留完整分发日志以便追查"
+        },
+        "module_integration": {
+          "primary_module": "export_hub",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "分发校验门禁与多通道",
+              "relationship": "result_store消费export_hub产生的分发校验门禁与多通道数据产物"
+            }
+          ],
+          "data_artifact": "export_hub-multi channel export 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "多通道分发时串行还是并行执行，影响下游消费顺序和失败恢复策略，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "export_hub",
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "export_hub",
+          "role": "producer",
+          "artifact": "export_hub-multi channel export 数据产物",
+          "behavior": "export_hub服务维护multi channel export核心业务数据，产生export_hub-multi channel export 数据产物",
+          "path": "backend/app/services/export_hub.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "分发校验门禁与多通道",
+          "behavior": "result_store消费export_hub产生的export_hub-multi channel export 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 7,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "proxy-health-routing",
+      "topic_name": "proxy health routing",
+      "family": "新增-proxy health ro",
+      "angle": "proxy health routing场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增proxy_pool配置数据的采集proxy_pool数据能力，系统尚未形成proxy_pool结果链路",
+        "business_result": "proxy_pool结果可被下游模块消费",
+        "prompt_main_request": "新增proxy_pool配置数据的采集proxy_pool数据能力，当前尚未形成该链路，缺少proxy_pool结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/proxy_pool.py",
+          "backend/app/services/crawl_task.py"
+        ],
+        "domain_chain": {
+          "input": "proxy_pool配置数据",
+          "operation": "采集proxy_pool数据",
+          "output": "proxy_pool结果",
+          "observable": "proxy_pool采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将proxy_pool替换为通用CRUD配置表而未实现采集proxy_pool数据的流程，其跨模块数据流转约束将失效，proxy_pool采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "health_gate",
+              "statement": "只有健康状态的代理才能被分配给采集任务",
+              "failure_if_omitted": "降级节点接入会推高采集失败率"
+            },
+            {
+              "kind": "load_balancing",
+              "statement": "高成功率节点优先但不能永久只用同一节点导致过载",
+              "failure_if_omitted": "单节点过载后会变成新的降级节点"
+            }
+          ],
+          "why_interact": "约束'只有健康状态的代理才能被分配给采集任务'与'高成功率节点优先但不能永久只用同一节点导致过载'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足只有健康状态的代理才能被分配给采集任务和高成功率节点优先但不能永久只用同一节点导致过载"
+        },
+        "module_integration": {
+          "primary_module": "proxy_pool",
+          "secondary_modules": [
+            {
+              "name": "crawl_task",
+              "role": "consumer",
+              "artifact": "代理健康检查与任务分配",
+              "relationship": "crawl_task消费proxy_pool产生的代理健康检查与任务分配数据产物"
+            }
+          ],
+          "data_artifact": "proxy_pool-proxy health routing 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "多健康节点并存时按成功率排序还是按延迟排序，影响任务总体吞吐和节点寿命，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "proxy_pool",
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "proxy_pool",
+          "role": "producer",
+          "artifact": "proxy_pool-proxy health routing 数据产物",
+          "behavior": "proxy_pool服务维护proxy health routing核心业务数据，产生proxy_pool-proxy health routing 数据产物",
+          "path": "backend/app/services/proxy_pool.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]"
+        },
+        {
+          "module": "crawl_task",
+          "role": "consumer",
+          "artifact": "代理健康检查与任务分配",
+          "behavior": "crawl_task消费proxy_pool产生的proxy_pool-proxy health routing 数据产物进行后续处理",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 8,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "retry-queue-dead-letter",
+      "topic_name": "retry queue dead letter",
+      "family": "Bugfix-retry queue dea",
+      "angle": "retry queue dead letter场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集retry_queue数据时retry_queue结果出现不一致的缺陷",
+        "business_result": "retry_queue结果可被下游模块消费",
+        "prompt_main_request": "修复采集retry_queue数据时retry_queue结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/retry_queue.py",
+          "backend/app/services/crawl_task.py"
+        ],
+        "domain_chain": {
+          "input": "retry_queue配置数据",
+          "operation": "采集retry_queue数据",
+          "output": "retry_queue结果",
+          "observable": "retry_queue采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将retry_queue替换为通用CRUD配置表而未实现采集retry_queue数据的流程，其跨模块数据流转约束将失效，retry_queue采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "retry_ceiling",
+              "statement": "超过最大重试的条目必须标记为死信终止循环",
+              "failure_if_omitted": "无限重试会阻塞后续任务"
+            },
+            {
+              "kind": "dead_letter_visibility",
+              "statement": "死信条目必须可查看且支持手动恢复",
+              "failure_if_omitted": "不可见的死信等于数据永丢"
+            }
+          ],
+          "why_interact": "约束'超过最大重试的条目必须标记为死信终止循环'与'死信条目必须可查看且支持手动恢复'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足超过最大重试的条目必须标记为死信终止循环和死信条目必须可查看且支持手动恢复"
+        },
+        "module_integration": {
+          "primary_module": "retry_queue",
+          "secondary_modules": [
+            {
+              "name": "crawl_task",
+              "role": "consumer",
+              "artifact": "重试上限与死信处理",
+              "relationship": "crawl_task消费retry_queue产生的重试上限与死信处理数据产物"
+            }
+          ],
+          "data_artifact": "retry_queue-retry queue dead letter 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "死信条目立即归档还是保留在队尾等待手动处理，影响任务队列优先级和恢复时效，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "retry_queue",
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "retry_queue",
+          "role": "producer",
+          "artifact": "retry_queue-retry queue dead letter 数据产物",
+          "behavior": "retry_queue服务维护retry queue dead letter核心业务数据，产生retry_queue-retry queue dead letter 数据产物",
+          "path": "backend/app/services/retry_queue.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]"
+        },
+        {
+          "module": "crawl_task",
+          "role": "consumer",
+          "artifact": "重试上限与死信处理",
+          "behavior": "crawl_task消费retry_queue产生的retry_queue-retry queue dead letter 数据产物进行后续处理",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 9,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "cron-schedule-reliability",
+      "topic_name": "cron schedule reliability",
+      "family": "优化-cron schedule r",
+      "angle": "cron schedule reliability场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集scheduler数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "scheduler结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集scheduler数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/scheduler.py",
+          "backend/app/services/retry_queue.py"
+        ],
+        "domain_chain": {
+          "input": "scheduler配置数据",
+          "operation": "采集scheduler数据",
+          "output": "scheduler结果",
+          "observable": "scheduler采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将scheduler替换为通用CRUD配置表而未实现采集scheduler数据的流程，其跨模块数据流转约束将失效，scheduler采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "cron_precision",
+              "statement": "Cron表达式解析必须精确到分钟匹配",
+              "failure_if_omitted": "偏差导致两个采集周期重叠"
+            },
+            {
+              "kind": "overlap_protection",
+              "statement": "前次调度未完成时不允许同一计划再次触发",
+              "failure_if_omitted": "并发触发会压垮采集通道"
+            }
+          ],
+          "why_interact": "约束'Cron表达式解析必须精确到分钟匹配'与'前次调度未完成时不允许同一计划再次触发'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足Cron表达式解析必须精确到分钟匹配和前次调度未完成时不允许同一计划再次触发"
+        },
+        "module_integration": {
+          "primary_module": "scheduler",
+          "secondary_modules": [
+            {
+              "name": "retry_queue",
+              "role": "consumer",
+              "artifact": "Cron调度重叠保护",
+              "relationship": "retry_queue消费scheduler产生的Cron调度重叠保护数据产物"
+            }
+          ],
+          "data_artifact": "scheduler-cron schedule reliability 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "调度超时时立即告警还是等待最大超时，影响上层运维响应和任务丢失风险，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "scheduler",
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "retry_queue",
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "scheduler",
+          "role": "producer",
+          "artifact": "scheduler-cron schedule reliability 数据产物",
+          "behavior": "scheduler服务维护cron schedule reliability核心业务数据，产生scheduler-cron schedule reliability 数据产物",
+          "path": "backend/app/services/scheduler.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]"
+        },
+        {
+          "module": "retry_queue",
+          "role": "consumer",
+          "artifact": "Cron调度重叠保护",
+          "behavior": "retry_queue消费scheduler产生的scheduler-cron schedule reliability 数据产物进行后续处理",
+          "path": "backend/app/services/retry_queue.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 10,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "template-market-evolution",
+      "topic_name": "template market evolution",
+      "family": "新增-template market",
+      "angle": "template market evolution场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增template_mgr配置数据的采集template_mgr数据能力，系统尚未形成template_mgr结果链路",
+        "business_result": "template_mgr结果可被下游模块消费",
+        "prompt_main_request": "新增template_mgr配置数据的采集template_mgr数据能力，当前尚未形成该链路，缺少template_mgr结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/template_mgr.py",
+          "backend/app/services/extract_rule.py"
+        ],
+        "domain_chain": {
+          "input": "template_mgr配置数据",
+          "operation": "采集template_mgr数据",
+          "output": "template_mgr结果",
+          "observable": "template_mgr采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将template_mgr替换为通用CRUD配置表而未实现采集template_mgr数据的流程，其跨模块数据流转约束将失效，template_mgr采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "version_backward",
+              "statement": "模板升级后旧版本的抽取规则仍可执行",
+              "failure_if_omitted": "不兼容会让存量任务全部失败"
+            },
+            {
+              "kind": "rating_gate",
+              "statement": "评分过低的新版本不能自动上架但可人工审核",
+              "failure_if_omitted": "低质版本会降低市场质量"
+            }
+          ],
+          "why_interact": "约束'模板升级后旧版本的抽取规则仍可执行'与'评分过低的新版本不能自动上架但可人工审核'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足模板升级后旧版本的抽取规则仍可执行和评分过低的新版本不能自动上架但可人工审核"
+        },
+        "module_integration": {
+          "primary_module": "template_mgr",
+          "secondary_modules": [
+            {
+              "name": "extract_rule",
+              "role": "consumer",
+              "artifact": "模板版本与规则兼容",
+              "relationship": "extract_rule消费template_mgr产生的模板版本与规则兼容数据产物"
+            }
+          ],
+          "data_artifact": "template_mgr-template market evolution 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "模板更新时增量补丁还是全量替换，影响已有采集任务的迁移成本和回滚难度，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "template_mgr",
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "extract_rule",
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "template_mgr",
+          "role": "producer",
+          "artifact": "template_mgr-template market evolution 数据产物",
+          "behavior": "template_mgr服务维护template market evolution核心业务数据，产生template_mgr-template market evolution 数据产物",
+          "path": "backend/app/services/template_mgr.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]"
+        },
+        {
+          "module": "extract_rule",
+          "role": "consumer",
+          "artifact": "模板版本与规则兼容",
+          "behavior": "extract_rule消费template_mgr产生的template_mgr-template market evolution 数据产物进行后续处理",
+          "path": "backend/app/services/extract_rule.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 11,
+      "slug": "refactor",
+      "task_type": "代码重构",
+      "topic": "parse-engine-extensibility",
+      "topic_name": "parse engine extensibility",
+      "family": "重构-parse engine ex",
+      "angle": "parse engine extensibility场景中的代码重构",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "重构采集parse_engine数据耦合代码，保持行为不变和输入输出不变",
+        "business_result": "parse_engine结果可被下游模块消费",
+        "prompt_main_request": "重构采集parse_engine数据代码结构，保持行为不变和口径不变",
+        "source_evidence": [
+          "backend/app/services/parse_engine.py",
+          "backend/app/services/extract_rule.py"
+        ],
+        "domain_chain": {
+          "input": "parse_engine配置数据",
+          "operation": "采集parse_engine数据",
+          "output": "parse_engine结果",
+          "observable": "parse_engine采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将parse_engine替换为通用CRUD配置表而未实现采集parse_engine数据的流程，其跨模块数据流转约束将失效，parse_engine采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "schema_compat",
+              "statement": "Schema变更后已有解析配置必须向前兼容",
+              "failure_if_omitted": "不兼容使得存量数据无法解析"
+            },
+            {
+              "kind": "engine_routing",
+              "statement": "不同页面类型必须路由到正确解析引擎",
+              "failure_if_omitted": "HTML引擎解析JSON会全量失败"
+            }
+          ],
+          "why_interact": "约束'Schema变更后已有解析配置必须向前兼容'与'不同页面类型必须路由到正确解析引擎'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足Schema变更后已有解析配置必须向前兼容和不同页面类型必须路由到正确解析引擎"
+        },
+        "module_integration": {
+          "primary_module": "parse_engine",
+          "secondary_modules": [
+            {
+              "name": "extract_rule",
+              "role": "consumer",
+              "artifact": "解析引擎适配多格式",
+              "relationship": "extract_rule消费parse_engine产生的解析引擎适配多格式数据产物"
+            }
+          ],
+          "data_artifact": "parse_engine-parse engine extensibility 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "不同引擎类型之间是否需要统一中间格式桥接层，影响解析链路的灵活性和维护复杂度，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "parse_engine",
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "extract_rule",
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "parse_engine",
+          "role": "producer",
+          "artifact": "parse_engine-parse engine extensibility 数据产物",
+          "behavior": "parse_engine服务维护parse engine extensibility核心业务数据，产生parse_engine-parse engine extensibility 数据产物",
+          "path": "backend/app/services/parse_engine.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]"
+        },
+        {
+          "module": "extract_rule",
+          "role": "consumer",
+          "artifact": "解析引擎适配多格式",
+          "behavior": "extract_rule消费parse_engine产生的parse_engine-parse engine extensibility 数据产物进行后续处理",
+          "path": "backend/app/services/extract_rule.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 12,
+      "slug": "migration",
+      "task_type": "依赖升级与迁移",
+      "topic": "credential-lifecycle",
+      "topic_name": "credential lifecycle",
+      "family": "迁移-credential life",
+      "angle": "credential lifecycle场景中的依赖迁移",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "迁移cookie_vault配置数据的存储格式版本，处理存量兼容和回滚",
+        "business_result": "cookie_vault结果可被下游模块消费",
+        "prompt_main_request": "迁移cookie_vault配置数据存储格式至新版本",
+        "source_evidence": [
+          "backend/app/services/cookie_vault.py",
+          "backend/app/services/anti_block.py"
+        ],
+        "domain_chain": {
+          "input": "cookie_vault配置数据",
+          "operation": "采集cookie_vault数据",
+          "output": "cookie_vault结果",
+          "observable": "cookie_vault采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将cookie_vault替换为通用CRUD配置表而未实现采集cookie_vault数据的流程，其跨模块数据流转约束将失效，cookie_vault采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "storage_safety",
+              "statement": "凭证迁移中原始存储不得删除直到新格式验证通过",
+              "failure_if_omitted": "提前删除会导致不可逆丢失"
+            },
+            {
+              "kind": "validation_gate",
+              "statement": "迁移后每条凭证必须通过站点验证才算成功",
+              "failure_if_omitted": "未验证凭证会阻塞认证链路"
+            }
+          ],
+          "why_interact": "约束'凭证迁移中原始存储不得删除直到新格式验证通过'与'迁移后每条凭证必须通过站点验证才算成功'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足凭证迁移中原始存储不得删除直到新格式验证通过和迁移后每条凭证必须通过站点验证才算成功"
+        },
+        "module_integration": {
+          "primary_module": "cookie_vault",
+          "secondary_modules": [
+            {
+              "name": "anti_block",
+              "role": "consumer",
+              "artifact": "凭证存储格式迁移",
+              "relationship": "anti_block消费cookie_vault产生的凭证存储格式迁移数据产物"
+            }
+          ],
+          "data_artifact": "cookie_vault-credential lifecycle 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "迁移时逐条还是批次执行，影响认证连续性和回滚操作的复杂度，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "cookie_vault",
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "anti_block",
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "cookie_vault",
+          "role": "producer",
+          "artifact": "cookie_vault-credential lifecycle 数据产物",
+          "behavior": "cookie_vault服务维护credential lifecycle核心业务数据，产生cookie_vault-credential lifecycle 数据产物",
+          "path": "backend/app/services/cookie_vault.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]"
+        },
+        {
+          "module": "anti_block",
+          "role": "consumer",
+          "artifact": "凭证存储格式迁移",
+          "behavior": "anti_block消费cookie_vault产生的cookie_vault-credential lifecycle 数据产物进行后续处理",
+          "path": "backend/app/services/anti_block.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 13,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "rpa-script-orchestration",
+      "topic_name": "rpa script orchestration",
+      "family": "新增-rpa script orch",
+      "angle": "rpa script orchestration场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增rpa_script配置数据的采集rpa_script数据能力，系统尚未形成rpa_script结果链路",
+        "business_result": "rpa_script结果可被下游模块消费",
+        "prompt_main_request": "新增rpa_script配置数据的采集rpa_script数据能力，当前尚未形成该链路，缺少rpa_script结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/rpa_script.py",
+          "backend/app/services/data_pipeline.py"
+        ],
+        "domain_chain": {
+          "input": "rpa_script配置数据",
+          "operation": "采集rpa_script数据",
+          "output": "rpa_script结果",
+          "observable": "rpa_script采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/rpa_script.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"RPA脚本库 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rpa_script\"\nREQUIRED_FIELDS = [\"脚本编号\", \"目标应用\", \"触发事件\"]\nSTATUS_ORDER = [\"草稿\", \"测试中\", \"已投产\", \"已废弃\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将rpa_script替换为通用CRUD配置表而未实现采集rpa_script数据的流程，其跨模块数据流转约束将失效，rpa_script采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "script_isolation",
+              "statement": "脚本执行失败不能阻塞流水线其他段",
+              "failure_if_omitted": "一个脚本崩溃会拖垮整条流水线"
+            },
+            {
+              "kind": "event_ordering",
+              "statement": "脚本触发事件必须保持编排顺序执行",
+              "failure_if_omitted": "乱序导致操作序列不可复现"
+            }
+          ],
+          "why_interact": "约束'脚本执行失败不能阻塞流水线其他段'与'脚本触发事件必须保持编排顺序执行'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足脚本执行失败不能阻塞流水线其他段和脚本触发事件必须保持编排顺序执行"
+        },
+        "module_integration": {
+          "primary_module": "rpa_script",
+          "secondary_modules": [
+            {
+              "name": "data_pipeline",
+              "role": "consumer",
+              "artifact": "RPA脚本编排隔离",
+              "relationship": "data_pipeline消费rpa_script产生的RPA脚本编排隔离数据产物"
+            }
+          ],
+          "data_artifact": "rpa_script-rpa script orchestration 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "脚本间数据传递走内存共享还是文件中间层，影响编排可调试性和重入安全，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "rpa_script",
+            "path": "backend/app/services/rpa_script.py",
+            "start_line": 1,
+            "end_line": 64
+          },
+          {
+            "module": "data_pipeline",
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 64
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "rpa_script",
+          "role": "producer",
+          "artifact": "rpa_script-rpa script orchestration 数据产物",
+          "behavior": "rpa_script服务维护rpa script orchestration核心业务数据，产生rpa_script-rpa script orchestration 数据产物",
+          "path": "backend/app/services/rpa_script.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"RPA脚本库 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rpa_script\"\nREQUIRED_FIELDS = [\"脚本编号\", \"目标应用\", \"触发事件\"]\nSTATUS_ORDER = [\"草稿\", \"测试中\", \"已投产\", \"已废弃\"]"
+        },
+        {
+          "module": "data_pipeline",
+          "role": "consumer",
+          "artifact": "RPA脚本编排隔离",
+          "behavior": "data_pipeline消费rpa_script产生的rpa_script-rpa script orchestration 数据产物进行后续处理",
+          "path": "backend/app/services/data_pipeline.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 14,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "proxy-pool-rotation",
+      "topic_name": "proxy pool rotation",
+      "family": "优化-proxy pool rota",
+      "angle": "proxy pool rotation场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集proxy_pool数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "proxy_pool结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集proxy_pool数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/proxy_pool.py",
+          "backend/app/services/rate_limiter.py"
+        ],
+        "domain_chain": {
+          "input": "proxy_pool配置数据",
+          "operation": "采集proxy_pool数据",
+          "output": "proxy_pool结果",
+          "observable": "proxy_pool采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将proxy_pool替换为通用CRUD配置表而未实现采集proxy_pool数据的流程，其跨模块数据流转约束将失效，proxy_pool采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "rotation_threshold",
+              "statement": "轮换频率不能高于源站反爬触发阈值",
+              "failure_if_omitted": "高频轮换本身会触发封禁"
+            },
+            {
+              "kind": "graceful_drain",
+              "statement": "下线节点必须先降级等待活跃连接排空",
+              "failure_if_omitted": "直接下线让进行中请求全部失败"
+            }
+          ],
+          "why_interact": "约束'轮换频率不能高于源站反爬触发阈值'与'下线节点必须先降级等待活跃连接排空'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足轮换频率不能高于源站反爬触发阈值和下线节点必须先降级等待活跃连接排空"
+        },
+        "module_integration": {
+          "primary_module": "proxy_pool",
+          "secondary_modules": [
+            {
+              "name": "rate_limiter",
+              "role": "consumer",
+              "artifact": "代理节点轮换与频控",
+              "relationship": "rate_limiter消费proxy_pool产生的代理节点轮换与频控数据产物"
+            }
+          ],
+          "data_artifact": "proxy_pool-proxy pool rotation 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "轮换策略定时触发还是成功率阈值触发，影响节点利用率和源站封禁风险，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "proxy_pool",
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "rate_limiter",
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "proxy_pool",
+          "role": "producer",
+          "artifact": "proxy_pool-proxy pool rotation 数据产物",
+          "behavior": "proxy_pool服务维护proxy pool rotation核心业务数据，产生proxy_pool-proxy pool rotation 数据产物",
+          "path": "backend/app/services/proxy_pool.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]"
+        },
+        {
+          "module": "rate_limiter",
+          "role": "consumer",
+          "artifact": "代理节点轮换与频控",
+          "behavior": "rate_limiter消费proxy_pool产生的proxy_pool-proxy pool rotation 数据产物进行后续处理",
+          "path": "backend/app/services/rate_limiter.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 15,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "site-freeze-policy",
+      "topic_name": "site freeze policy",
+      "family": "Bugfix-site freeze pol",
+      "angle": "site freeze policy场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集site_profile数据时site_profile结果出现不一致的缺陷",
+        "business_result": "site_profile结果可被下游模块消费",
+        "prompt_main_request": "修复采集site_profile数据时site_profile结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/site_profile.py",
+          "backend/app/services/rate_limiter.py"
+        ],
+        "domain_chain": {
+          "input": "site_profile配置数据",
+          "operation": "采集site_profile数据",
+          "output": "site_profile结果",
+          "observable": "site_profile采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/site_profile.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"站点画像业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"site_profile\"\nLIST_FIELDS = [\"站点编号\", \"域名\", \"编码格式\", \"反爬等级\", \"合规说明\", \"负责人\", \"接入状态\", \"最后爬取\"]\nREQUIRED_FIELDS = [\"站点编号\", \"域名\", \"编码格式\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将site_profile替换为通用CRUD配置表而未实现采集site_profile数据的流程，其跨模块数据流转约束将失效，site_profile采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "freeze_cascade",
+              "statement": "冻结站点时必须关联暂停所有频控策略",
+              "failure_if_omitted": "挂起孤立策略占用资源且无法恢复"
+            },
+            {
+              "kind": "thaw_validation",
+              "statement": "解冻时频控策略必须重新验证合规性和时效",
+              "failure_if_omitted": "过期策略直接启用会违反站点规范"
+            }
+          ],
+          "why_interact": "约束'冻结站点时必须关联暂停所有频控策略'与'解冻时频控策略必须重新验证合规性和时效'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足冻结站点时必须关联暂停所有频控策略和解冻时频控策略必须重新验证合规性和时效"
+        },
+        "module_integration": {
+          "primary_module": "site_profile",
+          "secondary_modules": [
+            {
+              "name": "rate_limiter",
+              "role": "consumer",
+              "artifact": "站点冻结与其频控策略",
+              "relationship": "rate_limiter消费site_profile产生的站点冻结与其频控策略数据产物"
+            }
+          ],
+          "data_artifact": "site_profile-site freeze policy 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "冻结后已有采集任务是取消还是暂停等待解冻，影响历史数据连续性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "site_profile",
+            "path": "backend/app/services/site_profile.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "rate_limiter",
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "site_profile",
+          "role": "producer",
+          "artifact": "site_profile-site freeze policy 数据产物",
+          "behavior": "site_profile服务维护site freeze policy核心业务数据，产生site_profile-site freeze policy 数据产物",
+          "path": "backend/app/services/site_profile.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"站点画像业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"site_profile\"\nLIST_FIELDS = [\"站点编号\", \"域名\", \"编码格式\", \"反爬等级\", \"合规说明\", \"负责人\", \"接入状态\", \"最后爬取\"]\nREQUIRED_FIELDS = [\"站点编号\", \"域名\", \"编码格式\"]"
+        },
+        {
+          "module": "rate_limiter",
+          "role": "consumer",
+          "artifact": "站点冻结与其频控策略",
+          "behavior": "rate_limiter消费site_profile产生的site_profile-site freeze policy 数据产物进行后续处理",
+          "path": "backend/app/services/rate_limiter.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 16,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "cookie-refresh-policy",
+      "topic_name": "cookie refresh policy",
+      "family": "新增-cookie refresh ",
+      "angle": "cookie refresh policy场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增cookie_vault配置数据的采集cookie_vault数据能力，系统尚未形成cookie_vault结果链路",
+        "business_result": "cookie_vault结果可被下游模块消费",
+        "prompt_main_request": "新增cookie_vault配置数据的采集cookie_vault数据能力，当前尚未形成该链路，缺少cookie_vault结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/cookie_vault.py",
+          "backend/app/services/anti_block.py"
+        ],
+        "domain_chain": {
+          "input": "cookie_vault配置数据",
+          "operation": "采集cookie_vault数据",
+          "output": "cookie_vault结果",
+          "observable": "cookie_vault采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将cookie_vault替换为通用CRUD配置表而未实现采集cookie_vault数据的流程，其跨模块数据流转约束将失效，cookie_vault采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "preemptive_window",
+              "statement": "即将过期的凭证必须在过期前完成刷新",
+              "failure_if_omitted": "过期后刷新会让采集中断"
+            },
+            {
+              "kind": "refresh_budget",
+              "statement": "同时刷新凭证数不能超过站点最大并发",
+              "failure_if_omitted": "批量刷新等同攻击行为触发封禁"
+            }
+          ],
+          "why_interact": "约束'即将过期的凭证必须在过期前完成刷新'与'同时刷新凭证数不能超过站点最大并发'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足即将过期的凭证必须在过期前完成刷新和同时刷新凭证数不能超过站点最大并发"
+        },
+        "module_integration": {
+          "primary_module": "cookie_vault",
+          "secondary_modules": [
+            {
+              "name": "anti_block",
+              "role": "consumer",
+              "artifact": "凭证预刷新策略",
+              "relationship": "anti_block消费cookie_vault产生的凭证预刷新策略数据产物"
+            }
+          ],
+          "data_artifact": "cookie_vault-cookie refresh policy 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "刷新时机按固定周期还是剩余有效期百分比，影响采集可用率和刷新开销，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "cookie_vault",
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "anti_block",
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "cookie_vault",
+          "role": "producer",
+          "artifact": "cookie_vault-cookie refresh policy 数据产物",
+          "behavior": "cookie_vault服务维护cookie refresh policy核心业务数据，产生cookie_vault-cookie refresh policy 数据产物",
+          "path": "backend/app/services/cookie_vault.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]"
+        },
+        {
+          "module": "anti_block",
+          "role": "consumer",
+          "artifact": "凭证预刷新策略",
+          "behavior": "anti_block消费cookie_vault产生的cookie_vault-cookie refresh policy 数据产物进行后续处理",
+          "path": "backend/app/services/anti_block.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 17,
+      "slug": "refactor",
+      "task_type": "代码重构",
+      "topic": "data-pipeline-recovery",
+      "topic_name": "data pipeline recovery",
+      "family": "重构-data pipeline r",
+      "angle": "data pipeline recovery场景中的代码重构",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "重构采集data_pipeline数据耦合代码，保持行为不变和输入输出不变",
+        "business_result": "data_pipeline结果可被下游模块消费",
+        "prompt_main_request": "重构采集data_pipeline数据代码结构，保持行为不变和口径不变",
+        "source_evidence": [
+          "backend/app/services/data_pipeline.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "data_pipeline配置数据",
+          "operation": "采集data_pipeline数据",
+          "output": "data_pipeline结果",
+          "observable": "data_pipeline采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将data_pipeline替换为通用CRUD配置表而未实现采集data_pipeline数据的流程，其跨模块数据流转约束将失效，data_pipeline采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "checkpoint_strategy",
+              "statement": "异常恢复只能从最近完整检查点继续",
+              "failure_if_omitted": "跳过检查点会导致重复计算"
+            },
+            {
+              "kind": "idempotency",
+              "statement": "恢复执行结果必须与首次执行结果相同",
+              "failure_if_omitted": "不一致结果让下游分析产生错误结论"
+            }
+          ],
+          "why_interact": "约束'异常恢复只能从最近完整检查点继续'与'恢复执行结果必须与首次执行结果相同'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足异常恢复只能从最近完整检查点继续和恢复执行结果必须与首次执行结果相同"
+        },
+        "module_integration": {
+          "primary_module": "data_pipeline",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "流水线断点恢复机制",
+              "relationship": "result_store消费data_pipeline产生的流水线断点恢复机制数据产物"
+            }
+          ],
+          "data_artifact": "data_pipeline-data pipeline recovery 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "流水线恢复采用断点续跑还是全量重跑，影响恢复时间和数据一致性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "data_pipeline",
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 64
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "data_pipeline",
+          "role": "producer",
+          "artifact": "data_pipeline-data pipeline recovery 数据产物",
+          "behavior": "data_pipeline服务维护data pipeline recovery核心业务数据，产生data_pipeline-data pipeline recovery 数据产物",
+          "path": "backend/app/services/data_pipeline.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "流水线断点恢复机制",
+          "behavior": "result_store消费data_pipeline产生的data_pipeline-data pipeline recovery 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 18,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "field-extraction-rule",
+      "topic_name": "field extraction rule",
+      "family": "优化-field extractio",
+      "angle": "field extraction rule场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集extract_rule数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "extract_rule结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集extract_rule数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/extract_rule.py",
+          "backend/app/services/parse_engine.py"
+        ],
+        "domain_chain": {
+          "input": "extract_rule配置数据",
+          "operation": "采集extract_rule数据",
+          "output": "extract_rule结果",
+          "observable": "extract_rule采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将extract_rule替换为通用CRUD配置表而未实现采集extract_rule数据的流程，其跨模块数据流转约束将失效，extract_rule采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "rule_conflict",
+              "statement": "同一页面多条规则按优先级依次应用",
+              "failure_if_omitted": "无序执行会导致字段值相互覆盖"
+            },
+            {
+              "kind": "version_lock",
+              "statement": "废弃规则版本不能被新建任务引用",
+              "failure_if_omitted": "旧版本可能已不兼容当前页面结构"
+            }
+          ],
+          "why_interact": "约束'同一页面多条规则按优先级依次应用'与'废弃规则版本不能被新建任务引用'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足同一页面多条规则按优先级依次应用和废弃规则版本不能被新建任务引用"
+        },
+        "module_integration": {
+          "primary_module": "extract_rule",
+          "secondary_modules": [
+            {
+              "name": "parse_engine",
+              "role": "consumer",
+              "artifact": "规则冲突与优先级",
+              "relationship": "parse_engine消费extract_rule产生的规则冲突与优先级数据产物"
+            }
+          ],
+          "data_artifact": "extract_rule-field extraction rule 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "规则冲突时按创建时间还是规则序号裁决，影响抽取结果的确定性和用户预期，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "extract_rule",
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "parse_engine",
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "extract_rule",
+          "role": "producer",
+          "artifact": "extract_rule-field extraction rule 数据产物",
+          "behavior": "extract_rule服务维护field extraction rule核心业务数据，产生extract_rule-field extraction rule 数据产物",
+          "path": "backend/app/services/extract_rule.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]"
+        },
+        {
+          "module": "parse_engine",
+          "role": "consumer",
+          "artifact": "规则冲突与优先级",
+          "behavior": "parse_engine消费extract_rule产生的extract_rule-field extraction rule 数据产物进行后续处理",
+          "path": "backend/app/services/parse_engine.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 19,
+      "slug": "migration",
+      "task_type": "依赖升级与迁移",
+      "topic": "monitor-alert-escalation",
+      "topic_name": "monitor alert escalation",
+      "family": "迁移-monitor alert e",
+      "angle": "monitor alert escalation场景中的依赖迁移",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "迁移log_monitor配置数据的存储格式版本，处理存量兼容和回滚",
+        "business_result": "log_monitor结果可被下游模块消费",
+        "prompt_main_request": "迁移log_monitor配置数据存储格式至新版本",
+        "source_evidence": [
+          "backend/app/services/log_monitor.py",
+          "backend/app/services/quality_check.py"
+        ],
+        "domain_chain": {
+          "input": "log_monitor配置数据",
+          "operation": "采集log_monitor数据",
+          "output": "log_monitor结果",
+          "observable": "log_monitor采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将log_monitor替换为通用CRUD配置表而未实现采集log_monitor数据的流程，其跨模块数据流转约束将失效，log_monitor采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "escalation_levels",
+              "statement": "告警升级必须按严重级别逐级通知",
+              "failure_if_omitted": "跳级通知让处理人缺少上下文"
+            },
+            {
+              "kind": "recovery_idempotent",
+              "statement": "已解决的告警不能被自动重复激活",
+              "failure_if_omitted": "误恢复再激活会引发告警风暴"
+            }
+          ],
+          "why_interact": "约束'告警升级必须按严重级别逐级通知'与'已解决的告警不能被自动重复激活'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足告警升级必须按严重级别逐级通知和已解决的告警不能被自动重复激活"
+        },
+        "module_integration": {
+          "primary_module": "log_monitor",
+          "secondary_modules": [
+            {
+              "name": "quality_check",
+              "role": "consumer",
+              "artifact": "监控告警分级升级",
+              "relationship": "quality_check消费log_monitor产生的监控告警分级升级数据产物"
+            }
+          ],
+          "data_artifact": "log_monitor-monitor alert escalation 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "告警聚合按事件类型还是来源模块汇总，影响运维响应速度和定位准确性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "log_monitor",
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 42
+          },
+          {
+            "module": "quality_check",
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "log_monitor",
+          "role": "producer",
+          "artifact": "log_monitor-monitor alert escalation 数据产物",
+          "behavior": "log_monitor服务维护monitor alert escalation核心业务数据，产生log_monitor-monitor alert escalation 数据产物",
+          "path": "backend/app/services/log_monitor.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]"
+        },
+        {
+          "module": "quality_check",
+          "role": "consumer",
+          "artifact": "监控告警分级升级",
+          "behavior": "quality_check消费log_monitor产生的log_monitor-monitor alert escalation 数据产物进行后续处理",
+          "path": "backend/app/services/quality_check.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 20,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "export-crypto-auth",
+      "topic_name": "export crypto auth",
+      "family": "新增-export crypto a",
+      "angle": "export crypto auth场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增export_hub配置数据的采集export_hub数据能力，系统尚未形成export_hub结果链路",
+        "business_result": "export_hub结果可被下游模块消费",
+        "prompt_main_request": "新增export_hub配置数据的采集export_hub数据能力，当前尚未形成该链路，缺少export_hub结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/export_hub.py",
+          "backend/app/services/data_pipeline.py"
+        ],
+        "domain_chain": {
+          "input": "export_hub配置数据",
+          "operation": "采集export_hub数据",
+          "output": "export_hub结果",
+          "observable": "export_hub采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将export_hub替换为通用CRUD配置表而未实现采集export_hub数据的流程，其跨模块数据流转约束将失效，export_hub采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "key_rotation_safe",
+              "statement": "加密密钥轮换不能中断正在分发中的通道",
+              "failure_if_omitted": "密钥变更让进行中分发全部失败"
+            },
+            {
+              "kind": "target_check",
+              "statement": "分发通道启用前必须验证目标地址可达",
+              "failure_if_omitted": "不可达通道白白消耗重试配额和加密资源"
+            }
+          ],
+          "why_interact": "约束'加密密钥轮换不能中断正在分发中的通道'与'分发通道启用前必须验证目标地址可达'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足加密密钥轮换不能中断正在分发中的通道和分发通道启用前必须验证目标地址可达"
+        },
+        "module_integration": {
+          "primary_module": "export_hub",
+          "secondary_modules": [
+            {
+              "name": "data_pipeline",
+              "role": "consumer",
+              "artifact": "分发加密与密钥管理",
+              "relationship": "data_pipeline消费export_hub产生的分发加密与密钥管理数据产物"
+            }
+          ],
+          "data_artifact": "export_hub-export crypto auth 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "分发加密使用固定预置密钥还是动态协商，影响安全强度和分发性能，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "export_hub",
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "data_pipeline",
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 64
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "export_hub",
+          "role": "producer",
+          "artifact": "export_hub-export crypto auth 数据产物",
+          "behavior": "export_hub服务维护export crypto auth核心业务数据，产生export_hub-export crypto auth 数据产物",
+          "path": "backend/app/services/export_hub.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]"
+        },
+        {
+          "module": "data_pipeline",
+          "role": "consumer",
+          "artifact": "分发加密与密钥管理",
+          "behavior": "data_pipeline消费export_hub产生的export_hub-export crypto auth 数据产物进行后续处理",
+          "path": "backend/app/services/data_pipeline.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 21,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "rate-limiting-backoff",
+      "topic_name": "rate limiting backoff",
+      "family": "Bugfix-rate limiting b",
+      "angle": "rate limiting backoff场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集rate_limiter数据时rate_limiter结果出现不一致的缺陷",
+        "business_result": "rate_limiter结果可被下游模块消费",
+        "prompt_main_request": "修复采集rate_limiter数据时rate_limiter结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/rate_limiter.py",
+          "backend/app/services/crawl_task.py"
+        ],
+        "domain_chain": {
+          "input": "rate_limiter配置数据",
+          "operation": "采集rate_limiter数据",
+          "output": "rate_limiter结果",
+          "observable": "rate_limiter采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将rate_limiter替换为通用CRUD配置表而未实现采集rate_limiter数据的流程，其跨模块数据流转约束将失效，rate_limiter采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "backoff_convergence",
+              "statement": "退避系数必须保证重试间隔逐步增大并收敛",
+              "failure_if_omitted": "固定间隔让反爬窗口持续开放"
+            },
+            {
+              "kind": "concurrency_sum",
+              "statement": "各策略并发连接数之和不得超过源站QPS总量",
+              "failure_if_omitted": "超限会让源站触发全站熔断"
+            }
+          ],
+          "why_interact": "约束'退避系数必须保证重试间隔逐步增大并收敛'与'各策略并发连接数之和不得超过源站QPS总量'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足退避系数必须保证重试间隔逐步增大并收敛和各策略并发连接数之和不得超过源站QPS总量"
+        },
+        "module_integration": {
+          "primary_module": "rate_limiter",
+          "secondary_modules": [
+            {
+              "name": "crawl_task",
+              "role": "consumer",
+              "artifact": "自适应退避与并发控制",
+              "relationship": "crawl_task消费rate_limiter产生的自适应退避与并发控制数据产物"
+            }
+          ],
+          "data_artifact": "rate_limiter-rate limiting backoff 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "退避基于固定指数还是源站返回的HTTP 429信号，影响采集效率和反爬合规性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "rate_limiter",
+            "path": "backend/app/services/rate_limiter.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "rate_limiter",
+          "role": "producer",
+          "artifact": "rate_limiter-rate limiting backoff 数据产物",
+          "behavior": "rate_limiter服务维护rate limiting backoff核心业务数据，产生rate_limiter-rate limiting backoff 数据产物",
+          "path": "backend/app/services/rate_limiter.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"频控策略业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rate_limiter\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\", \"并发连接\", \"退避系数\", \"最大重试\", \"窗口粒度\", \"生效时段\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"每秒上限\"]"
+        },
+        {
+          "module": "crawl_task",
+          "role": "consumer",
+          "artifact": "自适应退避与并发控制",
+          "behavior": "crawl_task消费rate_limiter产生的rate_limiter-rate limiting backoff 数据产物进行后续处理",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 22,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "pipeline-atomic-execution",
+      "topic_name": "pipeline atomic execution",
+      "family": "Bugfix-pipeline atomic",
+      "angle": "pipeline atomic execution场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集data_pipeline数据时data_pipeline结果出现不一致的缺陷",
+        "business_result": "data_pipeline结果可被下游模块消费",
+        "prompt_main_request": "修复采集data_pipeline数据时data_pipeline结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/data_pipeline.py",
+          "backend/app/services/retry_queue.py"
+        ],
+        "domain_chain": {
+          "input": "data_pipeline配置数据",
+          "operation": "采集data_pipeline数据",
+          "output": "data_pipeline结果",
+          "observable": "data_pipeline采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将data_pipeline替换为通用CRUD配置表而未实现采集data_pipeline数据的流程，其跨模块数据流转约束将失效，data_pipeline采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "segment_isolation",
+              "statement": "单个流水线段失败不能导致已完成段结果失效",
+              "failure_if_omitted": "一个段失败回滚全部段浪费已执行资源"
+            },
+            {
+              "kind": "partial_commit",
+              "statement": "已完成段结果必须被持久化以便恢复时跳过",
+              "failure_if_omitted": "丢失已完成段结果会让重跑成本倍增"
+            }
+          ],
+          "why_interact": "约束'单个流水线段失败不能导致已完成段结果失效'与'已完成段结果必须被持久化以便恢复时跳过'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足单个流水线段失败不能导致已完成段结果失效和已完成段结果必须被持久化以便恢复时跳过"
+        },
+        "module_integration": {
+          "primary_module": "data_pipeline",
+          "secondary_modules": [
+            {
+              "name": "retry_queue",
+              "role": "consumer",
+              "artifact": "流水线段失败隔离",
+              "relationship": "retry_queue消费data_pipeline产生的流水线段失败隔离数据产物"
+            }
+          ],
+          "data_artifact": "data_pipeline-pipeline atomic execution 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "段失败后保留已完成段还是全部回滚，影响恢复效率和结果一致性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "data_pipeline",
+            "path": "backend/app/services/data_pipeline.py",
+            "start_line": 1,
+            "end_line": 64
+          },
+          {
+            "module": "retry_queue",
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "data_pipeline",
+          "role": "producer",
+          "artifact": "data_pipeline-pipeline atomic execution 数据产物",
+          "behavior": "data_pipeline服务维护pipeline atomic execution核心业务数据，产生data_pipeline-pipeline atomic execution 数据产物",
+          "path": "backend/app/services/data_pipeline.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集流水线 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"data_pipeline\"\nREQUIRED_FIELDS = [\"段编号\", \"输入来源\", \"转换算子\"]\nSTATUS_ORDER = [\"待编排\", \"运行中\", \"已完成\", \"异常中断\"]"
+        },
+        {
+          "module": "retry_queue",
+          "role": "consumer",
+          "artifact": "流水线段失败隔离",
+          "behavior": "retry_queue消费data_pipeline产生的data_pipeline-pipeline atomic execution 数据产物进行后续处理",
+          "path": "backend/app/services/retry_queue.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 23,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "task-schedule-conflict",
+      "topic_name": "task schedule conflict",
+      "family": "新增-task schedule c",
+      "angle": "task schedule conflict场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增scheduler配置数据的采集scheduler数据能力，系统尚未形成scheduler结果链路",
+        "business_result": "scheduler结果可被下游模块消费",
+        "prompt_main_request": "新增scheduler配置数据的采集scheduler数据能力，当前尚未形成该链路，缺少scheduler结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/scheduler.py",
+          "backend/app/services/crawl_task.py"
+        ],
+        "domain_chain": {
+          "input": "scheduler配置数据",
+          "operation": "采集scheduler数据",
+          "output": "scheduler结果",
+          "observable": "scheduler采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将scheduler替换为通用CRUD配置表而未实现采集scheduler数据的流程，其跨模块数据流转约束将失效，scheduler采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "group_atomicity",
+              "statement": "同一组内的多个任务要么全部调度要么全不调度",
+              "failure_if_omitted": "部分调度会破坏业务一致性"
+            },
+            {
+              "kind": "resource_pooling",
+              "statement": "组调度分配的资源不能超过可用代理节点数",
+              "failure_if_omitted": "超分配任务永远无法完成"
+            }
+          ],
+          "why_interact": "约束'同一组内的多个任务要么全部调度要么全不调度'与'组调度分配的资源不能超过可用代理节点数'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足同一组内的多个任务要么全部调度要么全不调度和组调度分配的资源不能超过可用代理节点数"
+        },
+        "module_integration": {
+          "primary_module": "scheduler",
+          "secondary_modules": [
+            {
+              "name": "crawl_task",
+              "role": "consumer",
+              "artifact": "组调度与批量采集",
+              "relationship": "crawl_task消费scheduler产生的组调度与批量采集数据产物"
+            }
+          ],
+          "data_artifact": "scheduler-task schedule conflict 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "组调度失败时全组重试还是分拆独立重试，影响采集完整性保证的粒度，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "scheduler",
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "scheduler",
+          "role": "producer",
+          "artifact": "scheduler-task schedule conflict 数据产物",
+          "behavior": "scheduler服务维护task schedule conflict核心业务数据，产生scheduler-task schedule conflict 数据产物",
+          "path": "backend/app/services/scheduler.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]"
+        },
+        {
+          "module": "crawl_task",
+          "role": "consumer",
+          "artifact": "组调度与批量采集",
+          "behavior": "crawl_task消费scheduler产生的scheduler-task schedule conflict 数据产物进行后续处理",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 24,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "quality-audit-loop",
+      "topic_name": "quality audit loop",
+      "family": "Bugfix-quality audit l",
+      "angle": "quality audit loop场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集quality_check数据时quality_check结果出现不一致的缺陷",
+        "business_result": "quality_check结果可被下游模块消费",
+        "prompt_main_request": "修复采集quality_check数据时quality_check结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/quality_check.py",
+          "backend/app/services/log_monitor.py"
+        ],
+        "domain_chain": {
+          "input": "quality_check配置数据",
+          "operation": "采集quality_check数据",
+          "output": "quality_check结果",
+          "observable": "quality_check采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将quality_check替换为通用CRUD配置表而未实现采集quality_check数据的流程，其跨模块数据流转约束将失效，quality_check采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "event_correlation",
+              "statement": "审计失败必须生成对应级别的监控事件",
+              "failure_if_omitted": "无事件的审计失败无人知晓"
+            },
+            {
+              "kind": "false_positive",
+              "statement": "重复审计同一批次但数据未变时不应重复生成事件",
+              "failure_if_omitted": "重复事件会淹没真实告警"
+            }
+          ],
+          "why_interact": "约束'审计失败必须生成对应级别的监控事件'与'重复审计同一批次但数据未变时不应重复生成事件'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足审计失败必须生成对应级别的监控事件和重复审计同一批次但数据未变时不应重复生成事件"
+        },
+        "module_integration": {
+          "primary_module": "quality_check",
+          "secondary_modules": [
+            {
+              "name": "log_monitor",
+              "role": "consumer",
+              "artifact": "审计结果与监控事件联动",
+              "relationship": "log_monitor消费quality_check产生的审计结果与监控事件联动数据产物"
+            }
+          ],
+          "data_artifact": "quality_check-quality audit loop 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "审计失败事件与已存在事件去重时按内容还是按时间窗口，影响告警准确率和运维效率，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "quality_check",
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "log_monitor",
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 42
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "quality_check",
+          "role": "producer",
+          "artifact": "quality_check-quality audit loop 数据产物",
+          "behavior": "quality_check服务维护quality audit loop核心业务数据，产生quality_check-quality audit loop 数据产物",
+          "path": "backend/app/services/quality_check.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]"
+        },
+        {
+          "module": "log_monitor",
+          "role": "consumer",
+          "artifact": "审计结果与监控事件联动",
+          "behavior": "log_monitor消费quality_check产生的quality_check-quality audit loop 数据产物进行后续处理",
+          "path": "backend/app/services/log_monitor.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 25,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "delta-sync-watermark",
+      "topic_name": "delta sync watermark",
+      "family": "Bugfix-delta sync wate",
+      "angle": "delta sync watermark场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集delta_sync数据时delta_sync结果出现不一致的缺陷",
+        "business_result": "delta_sync结果可被下游模块消费",
+        "prompt_main_request": "修复采集delta_sync数据时delta_sync结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/delta_sync.py",
+          "backend/app/services/export_hub.py"
+        ],
+        "domain_chain": {
+          "input": "delta_sync配置数据",
+          "operation": "采集delta_sync数据",
+          "output": "delta_sync结果",
+          "observable": "delta_sync采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/delta_sync.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"增量同步 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"delta_sync\"\nREQUIRED_FIELDS = [\"水位编号\", \"源数据集\", \"增量字段\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将delta_sync替换为通用CRUD配置表而未实现采集delta_sync数据的流程，其跨模块数据流转约束将失效，delta_sync采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "rollback_safety",
+              "statement": "水位回退时已经分发的批次不可重复分发",
+              "failure_if_omitted": "重复分发让下游收到反复数据"
+            },
+            {
+              "kind": "gap_detection",
+              "statement": "回退后必须检测并标记数据缺失区间",
+              "failure_if_omitted": "遗漏区间会让分析缺少完整时间段"
+            }
+          ],
+          "why_interact": "约束'水位回退时已经分发的批次不可重复分发'与'回退后必须检测并标记数据缺失区间'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足水位回退时已经分发的批次不可重复分发和回退后必须检测并标记数据缺失区间"
+        },
+        "module_integration": {
+          "primary_module": "delta_sync",
+          "secondary_modules": [
+            {
+              "name": "export_hub",
+              "role": "consumer",
+              "artifact": "同步水位回退与分发一致性",
+              "relationship": "export_hub消费delta_sync产生的同步水位回退与分发一致性数据产物"
+            }
+          ],
+          "data_artifact": "delta_sync-delta sync watermark 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "回退水位时只回退同步位置还是连带已分发标记重置，影响下游一致性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "delta_sync",
+            "path": "backend/app/services/delta_sync.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "export_hub",
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "delta_sync",
+          "role": "producer",
+          "artifact": "delta_sync-delta sync watermark 数据产物",
+          "behavior": "delta_sync服务维护delta sync watermark核心业务数据，产生delta_sync-delta sync watermark 数据产物",
+          "path": "backend/app/services/delta_sync.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"增量同步 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"delta_sync\"\nREQUIRED_FIELDS = [\"水位编号\", \"源数据集\", \"增量字段\"]"
+        },
+        {
+          "module": "export_hub",
+          "role": "consumer",
+          "artifact": "同步水位回退与分发一致性",
+          "behavior": "export_hub消费delta_sync产生的delta_sync-delta sync watermark 数据产物进行后续处理",
+          "path": "backend/app/services/export_hub.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 26,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "anti-block-strategy",
+      "topic_name": "anti block strategy",
+      "family": "优化-anti block stra",
+      "angle": "anti block strategy场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集anti_block数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "anti_block结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集anti_block数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/anti_block.py",
+          "backend/app/services/proxy_pool.py"
+        ],
+        "domain_chain": {
+          "input": "anti_block配置数据",
+          "operation": "采集anti_block数据",
+          "output": "anti_block结果",
+          "observable": "anti_block采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将anti_block替换为通用CRUD配置表而未实现采集anti_block数据的流程，其跨模块数据流转约束将失效，anti_block采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "effect_measurement",
+              "statement": "对抗策略启用后必须在合理窗口内测量效果",
+              "failure_if_omitted": "无测量会让无效策略持续占用资源"
+            },
+            {
+              "kind": "auto_degrade",
+              "statement": "评估为失效的策略应自动降级并通知运维",
+              "failure_if_omitted": "失效策略持续运行等同放行反爬"
+            }
+          ],
+          "why_interact": "约束'对抗策略启用后必须在合理窗口内测量效果'与'评估为失效的策略应自动降级并通知运维'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足对抗策略启用后必须在合理窗口内测量效果和评估为失效的策略应自动降级并通知运维"
+        },
+        "module_integration": {
+          "primary_module": "anti_block",
+          "secondary_modules": [
+            {
+              "name": "proxy_pool",
+              "role": "consumer",
+              "artifact": "对抗策略效果评估闭环",
+              "relationship": "proxy_pool消费anti_block产生的对抗策略效果评估闭环数据产物"
+            }
+          ],
+          "data_artifact": "anti_block-anti block strategy 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "效果评估周期按固定次数还是按时间窗口，影响策略调整的敏捷性和稳定性，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "anti_block",
+            "path": "backend/app/services/anti_block.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "proxy_pool",
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "anti_block",
+          "role": "producer",
+          "artifact": "anti_block-anti block strategy 数据产物",
+          "behavior": "anti_block服务维护anti block strategy核心业务数据，产生anti_block-anti block strategy 数据产物",
+          "path": "backend/app/services/anti_block.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"反爬对抗业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"anti_block\"\nLIST_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\", \"应对动作\", \"切换耗时\", \"成功率\", \"生效时段\", \"备注\"]\nREQUIRED_FIELDS = [\"策略编号\", \"目标站点\", \"触发特征\"]"
+        },
+        {
+          "module": "proxy_pool",
+          "role": "consumer",
+          "artifact": "对抗策略效果评估闭环",
+          "behavior": "proxy_pool消费anti_block产生的anti_block-anti block strategy 数据产物进行后续处理",
+          "path": "backend/app/services/proxy_pool.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 27,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "multi-channel-export",
+      "topic_name": "multi channel export",
+      "family": "Bugfix-multi channel e",
+      "angle": "multi channel export场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集export_hub数据时export_hub结果出现不一致的缺陷",
+        "business_result": "export_hub结果可被下游模块消费",
+        "prompt_main_request": "修复采集export_hub数据时export_hub结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/export_hub.py",
+          "backend/app/services/quality_check.py"
+        ],
+        "domain_chain": {
+          "input": "export_hub配置数据",
+          "operation": "采集export_hub数据",
+          "output": "export_hub结果",
+          "observable": "export_hub采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将export_hub替换为通用CRUD配置表而未实现采集export_hub数据的流程，其跨模块数据流转约束将失效，export_hub采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "gate_enforcement",
+              "statement": "所有分发通道必须经过质量校验门禁",
+              "failure_if_omitted": "绕过门禁直发会把脏数据传至下游"
+            },
+            {
+              "kind": "retroactive_gate",
+              "statement": "已分发但后续发现质量问题需回撤通知",
+              "failure_if_omitted": "无回撤机制下游会持续消费错误数据"
+            }
+          ],
+          "why_interact": "约束'所有分发通道必须经过质量校验门禁'与'已分发但后续发现质量问题需回撤通知'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足所有分发通道必须经过质量校验门禁和已分发但后续发现质量问题需回撤通知"
+        },
+        "module_integration": {
+          "primary_module": "export_hub",
+          "secondary_modules": [
+            {
+              "name": "quality_check",
+              "role": "consumer",
+              "artifact": "分发前校验门禁绕过修复",
+              "relationship": "quality_check消费export_hub产生的分发前校验门禁绕过修复数据产物"
+            }
+          ],
+          "data_artifact": "export_hub-multi channel export 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "门禁绕过时阻断分发还是降级标记继续发送，影响下游数据可靠性和业务连续性，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "export_hub",
+            "path": "backend/app/services/export_hub.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "quality_check",
+            "path": "backend/app/services/quality_check.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "export_hub",
+          "role": "producer",
+          "artifact": "export_hub-multi channel export 数据产物",
+          "behavior": "export_hub服务维护multi channel export核心业务数据，产生export_hub-multi channel export 数据产物",
+          "path": "backend/app/services/export_hub.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"数据分发业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"export_hub\"\nLIST_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\", \"加密方式\", \"压缩选项\", \"分片大小\", \"重试上限\", \"回调地址\"]\nREQUIRED_FIELDS = [\"通道编号\", \"输出格式\", \"目标地址\"]"
+        },
+        {
+          "module": "quality_check",
+          "role": "consumer",
+          "artifact": "分发前校验门禁绕过修复",
+          "behavior": "quality_check消费export_hub产生的export_hub-multi channel export 数据产物进行后续处理",
+          "path": "backend/app/services/quality_check.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"质量审计 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"quality_check\"\nREQUIRED_FIELDS = [\"记录编号\", \"关联批次\", \"检查项\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 28,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "proxy-health-routing",
+      "topic_name": "proxy health routing",
+      "family": "Bugfix-proxy health ro",
+      "angle": "proxy health routing场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集proxy_pool数据时proxy_pool结果出现不一致的缺陷",
+        "business_result": "proxy_pool结果可被下游模块消费",
+        "prompt_main_request": "修复采集proxy_pool数据时proxy_pool结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/proxy_pool.py",
+          "backend/app/services/log_monitor.py"
+        ],
+        "domain_chain": {
+          "input": "proxy_pool配置数据",
+          "operation": "采集proxy_pool数据",
+          "output": "proxy_pool结果",
+          "observable": "proxy_pool采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将proxy_pool替换为通用CRUD配置表而未实现采集proxy_pool数据的流程，其跨模块数据流转约束将失效，proxy_pool采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "check_staleness",
+              "statement": "健康检测结果超过时效不应用于路由决策",
+              "failure_if_omitted": "过期检测结果会让故障节点持续被选中"
+            },
+            {
+              "kind": "burst_protection",
+              "statement": "短时间内大量节点同时降级需触发告警",
+              "failure_if_omitted": "集中降级表明源站可能发生大范围封禁"
+            }
+          ],
+          "why_interact": "约束'健康检测结果超过时效不应用于路由决策'与'短时间内大量节点同时降级需触发告警'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足健康检测结果超过时效不应用于路由决策和短时间内大量节点同时降级需触发告警"
+        },
+        "module_integration": {
+          "primary_module": "proxy_pool",
+          "secondary_modules": [
+            {
+              "name": "log_monitor",
+              "role": "consumer",
+              "artifact": "代理健康检测延迟",
+              "relationship": "log_monitor消费proxy_pool产生的代理健康检测延迟数据产物"
+            }
+          ],
+          "data_artifact": "proxy_pool-proxy health routing 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "健康检测失败时立即降级还是观察多次后降级，影响节点可用率和误判率，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "proxy_pool",
+            "path": "backend/app/services/proxy_pool.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "log_monitor",
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 42
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "proxy_pool",
+          "role": "producer",
+          "artifact": "proxy_pool-proxy health routing 数据产物",
+          "behavior": "proxy_pool服务维护proxy health routing核心业务数据，产生proxy_pool-proxy health routing 数据产物",
+          "path": "backend/app/services/proxy_pool.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"代理调度业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"proxy_pool\"\nLIST_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\", \"端口号\", \"匿名等级\", \"响应延迟\", \"成功率\", \"最后检测\"]\nREQUIRED_FIELDS = [\"节点编号\", \"代理类型\", \"IP地址\"]"
+        },
+        {
+          "module": "log_monitor",
+          "role": "consumer",
+          "artifact": "代理健康检测延迟",
+          "behavior": "log_monitor消费proxy_pool产生的proxy_pool-proxy health routing 数据产物进行后续处理",
+          "path": "backend/app/services/log_monitor.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 29,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "retry-queue-dead-letter",
+      "topic_name": "retry queue dead letter",
+      "family": "优化-retry queue dea",
+      "angle": "retry queue dead letter场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集retry_queue数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "retry_queue结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集retry_queue数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/retry_queue.py",
+          "backend/app/services/scheduler.py"
+        ],
+        "domain_chain": {
+          "input": "retry_queue配置数据",
+          "operation": "采集retry_queue数据",
+          "output": "retry_queue结果",
+          "observable": "retry_queue采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将retry_queue替换为通用CRUD配置表而未实现采集retry_queue数据的流程，其跨模块数据流转约束将失效，retry_queue采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "archive_window",
+              "statement": "死信条目超过保留期限应自动归档而非永久占用",
+              "failure_if_omitted": "无限积累死信拖慢队列扫描"
+            },
+            {
+              "kind": "selective_recovery",
+              "statement": "支持按站点或错误类型选择性批量恢复死信",
+              "failure_if_omitted": "全量恢复会重新触发相同失败"
+            }
+          ],
+          "why_interact": "约束'死信条目超过保留期限应自动归档而非永久占用'与'支持按站点或错误类型选择性批量恢复死信'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足死信条目超过保留期限应自动归档而非永久占用和支持按站点或错误类型选择性批量恢复死信"
+        },
+        "module_integration": {
+          "primary_module": "retry_queue",
+          "secondary_modules": [
+            {
+              "name": "scheduler",
+              "role": "consumer",
+              "artifact": "死信自动归档与恢复",
+              "relationship": "scheduler消费retry_queue产生的死信自动归档与恢复数据产物"
+            }
+          ],
+          "data_artifact": "retry_queue-retry queue dead letter 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "死信归档按时间还是按数量阈值触发，影响队列清理效率和关键数据留存，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "retry_queue",
+            "path": "backend/app/services/retry_queue.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "scheduler",
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "retry_queue",
+          "role": "producer",
+          "artifact": "retry_queue-retry queue dead letter 数据产物",
+          "behavior": "retry_queue服务维护retry queue dead letter核心业务数据，产生retry_queue-retry queue dead letter 数据产物",
+          "path": "backend/app/services/retry_queue.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"重试队列 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"retry_queue\"\nREQUIRED_FIELDS = [\"条目编号\", \"失败页面\", \"失败原因\"]"
+        },
+        {
+          "module": "scheduler",
+          "role": "consumer",
+          "artifact": "死信自动归档与恢复",
+          "behavior": "scheduler消费retry_queue产生的retry_queue-retry queue dead letter 数据产物进行后续处理",
+          "path": "backend/app/services/scheduler.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 30,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "cron-schedule-reliability",
+      "topic_name": "cron schedule reliability",
+      "family": "新增-cron schedule r",
+      "angle": "cron schedule reliability场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增scheduler配置数据的采集scheduler数据能力，系统尚未形成scheduler结果链路",
+        "business_result": "scheduler结果可被下游模块消费",
+        "prompt_main_request": "新增scheduler配置数据的采集scheduler数据能力，当前尚未形成该链路，缺少scheduler结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/scheduler.py",
+          "backend/app/services/log_monitor.py"
+        ],
+        "domain_chain": {
+          "input": "scheduler配置数据",
+          "operation": "采集scheduler数据",
+          "output": "scheduler结果",
+          "observable": "scheduler采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将scheduler替换为通用CRUD配置表而未实现采集scheduler数据的流程，其跨模块数据流转约束将失效，scheduler采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "execution_audit",
+              "statement": "每次调度执行必须记录开始结束时间和结果",
+              "failure_if_omitted": "无记录让调度历史完全不可追溯"
+            },
+            {
+              "kind": "missed_detection",
+              "statement": "因系统重启错过的调度应被检测并标记",
+              "failure_if_omitted": "错过调度无声跳过会让数据断档"
+            }
+          ],
+          "why_interact": "约束'每次调度执行必须记录开始结束时间和结果'与'因系统重启错过的调度应被检测并标记'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足每次调度执行必须记录开始结束时间和结果和因系统重启错过的调度应被检测并标记"
+        },
+        "module_integration": {
+          "primary_module": "scheduler",
+          "secondary_modules": [
+            {
+              "name": "log_monitor",
+              "role": "consumer",
+              "artifact": "调度执行历史可观测",
+              "relationship": "log_monitor消费scheduler产生的调度执行历史可观测数据产物"
+            }
+          ],
+          "data_artifact": "scheduler-cron schedule reliability 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "调度执行历史存储保留多长时间，影响存储开销和故障追溯能力，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "scheduler",
+            "path": "backend/app/services/scheduler.py",
+            "start_line": 1,
+            "end_line": 60
+          },
+          {
+            "module": "log_monitor",
+            "path": "backend/app/services/log_monitor.py",
+            "start_line": 1,
+            "end_line": 42
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "scheduler",
+          "role": "producer",
+          "artifact": "scheduler-cron schedule reliability 数据产物",
+          "behavior": "scheduler服务维护cron schedule reliability核心业务数据，产生scheduler-cron schedule reliability 数据产物",
+          "path": "backend/app/services/scheduler.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"定时调度 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"scheduler\"\nREQUIRED_FIELDS = [\"计划编号\", \"关联任务\", \"Cron表达式\"]"
+        },
+        {
+          "module": "log_monitor",
+          "role": "consumer",
+          "artifact": "调度执行历史可观测",
+          "behavior": "log_monitor消费scheduler产生的scheduler-cron schedule reliability 数据产物进行后续处理",
+          "path": "backend/app/services/log_monitor.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集监控 分析看板服务：汇总指标、运行分析并生成模拟结果。\"\"\"\nfrom __future__ import annotations\n\nimport random\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"log_monitor\"\nREQUIRED_FIELDS = [\"事件编号\", \"事件类型\", \"严重级别\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 31,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "template-market-evolution",
+      "topic_name": "template market evolution",
+      "family": "Bugfix-template market",
+      "angle": "template market evolution场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集template_mgr数据时template_mgr结果出现不一致的缺陷",
+        "business_result": "template_mgr结果可被下游模块消费",
+        "prompt_main_request": "修复采集template_mgr数据时template_mgr结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/template_mgr.py",
+          "backend/app/services/crawl_task.py"
+        ],
+        "domain_chain": {
+          "input": "template_mgr配置数据",
+          "operation": "采集template_mgr数据",
+          "output": "template_mgr结果",
+          "observable": "template_mgr采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将template_mgr替换为通用CRUD配置表而未实现采集template_mgr数据的流程，其跨模块数据流转约束将失效，template_mgr采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "reference_safety",
+              "statement": "被采集任务引用的模板不可删除",
+              "failure_if_omitted": "删除引用模板让运行中任务失去配置依据"
+            },
+            {
+              "kind": "orphan_cleanup",
+              "statement": "无引用且长期未更新的模板应提示清理",
+              "failure_if_omitted": "废弃模板囤积降低市场可用度"
+            }
+          ],
+          "why_interact": "约束'被采集任务引用的模板不可删除'与'无引用且长期未更新的模板应提示清理'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足被采集任务引用的模板不可删除和无引用且长期未更新的模板应提示清理"
+        },
+        "module_integration": {
+          "primary_module": "template_mgr",
+          "secondary_modules": [
+            {
+              "name": "crawl_task",
+              "role": "consumer",
+              "artifact": "模板引用计数与安全删除",
+              "relationship": "crawl_task消费template_mgr产生的模板引用计数与安全删除数据产物"
+            }
+          ],
+          "data_artifact": "template_mgr-template market evolution 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "模板删除时软删除保留恢复期还是立即物理删除，影响误删恢复和存储清理效率，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "template_mgr",
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "crawl_task",
+            "path": "backend/app/services/crawl_task.py",
+            "start_line": 1,
+            "end_line": 60
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "template_mgr",
+          "role": "producer",
+          "artifact": "template_mgr-template market evolution 数据产物",
+          "behavior": "template_mgr服务维护template market evolution核心业务数据，产生template_mgr-template market evolution 数据产物",
+          "path": "backend/app/services/template_mgr.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]"
+        },
+        {
+          "module": "crawl_task",
+          "role": "consumer",
+          "artifact": "模板引用计数与安全删除",
+          "behavior": "crawl_task消费template_mgr产生的template_mgr-template market evolution 数据产物进行后续处理",
+          "path": "backend/app/services/crawl_task.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集任务 时间线服务：生成作业时间序列和示例数据。\"\"\"\nfrom __future__ import annotations\n\nfrom datetime import date, timedelta\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"crawl_task\"\nREQUIRED_FIELDS = [\"任务编号\", \"目标站点\", \"入口URL\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 32,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "parse-engine-extensibility",
+      "topic_name": "parse engine extensibility",
+      "family": "新增-parse engine ex",
+      "angle": "parse engine extensibility场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增parse_engine配置数据的采集parse_engine数据能力，系统尚未形成parse_engine结果链路",
+        "business_result": "parse_engine结果可被下游模块消费",
+        "prompt_main_request": "新增parse_engine配置数据的采集parse_engine数据能力，当前尚未形成该链路，缺少parse_engine结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/parse_engine.py",
+          "backend/app/services/result_store.py"
+        ],
+        "domain_chain": {
+          "input": "parse_engine配置数据",
+          "operation": "采集parse_engine数据",
+          "output": "parse_engine结果",
+          "observable": "parse_engine采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将parse_engine替换为通用CRUD配置表而未实现采集parse_engine数据的流程，其跨模块数据流转约束将失效，parse_engine采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "result_merge",
+              "statement": "多个引擎解析同一数据源结果需按配置规则合并",
+              "failure_if_omitted": "简单拼接会导致字段冲突"
+            },
+            {
+              "kind": "timeout_gating",
+              "statement": "单个引擎超时不应阻塞其他引擎返回结果",
+              "failure_if_omitted": "串行等待会让整体延迟线性增加"
+            }
+          ],
+          "why_interact": "约束'多个引擎解析同一数据源结果需按配置规则合并'与'单个引擎超时不应阻塞其他引擎返回结果'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足多个引擎解析同一数据源结果需按配置规则合并和单个引擎超时不应阻塞其他引擎返回结果"
+        },
+        "module_integration": {
+          "primary_module": "parse_engine",
+          "secondary_modules": [
+            {
+              "name": "result_store",
+              "role": "consumer",
+              "artifact": "多引擎解析结果聚合",
+              "relationship": "result_store消费parse_engine产生的多引擎解析结果聚合数据产物"
+            }
+          ],
+          "data_artifact": "parse_engine-parse engine extensibility 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "多引擎结果合并采用先到先得还是加权投票，影响最终数据质量和计算开销，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "parse_engine",
+            "path": "backend/app/services/parse_engine.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "result_store",
+            "path": "backend/app/services/result_store.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "parse_engine",
+          "role": "producer",
+          "artifact": "parse_engine-parse engine extensibility 数据产物",
+          "behavior": "parse_engine服务维护parse engine extensibility核心业务数据，产生parse_engine-parse engine extensibility 数据产物",
+          "path": "backend/app/services/parse_engine.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"解析引擎业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"parse_engine\"\nLIST_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\", \"解析规则\", \"字符编码\", \"容错模式\", \"输出Schema\", \"版本号\"]\nREQUIRED_FIELDS = [\"配置编号\", \"页面类型\", \"引擎类型\"]"
+        },
+        {
+          "module": "result_store",
+          "role": "consumer",
+          "artifact": "多引擎解析结果聚合",
+          "behavior": "result_store消费parse_engine产生的parse_engine-parse engine extensibility 数据产物进行后续处理",
+          "path": "backend/app/services/result_store.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"采集仓储业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"result_store\"\nLIST_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\", \"有效行数\", \"存储路径\", \"压缩格式\", \"校验摘要\", \"落地时间\"]\nREQUIRED_FIELDS = [\"批次编号\", \"关联任务\", \"原始行数\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 33,
+      "slug": "optimization",
+      "task_type": "功能优化",
+      "topic": "credential-lifecycle",
+      "topic_name": "credential lifecycle",
+      "family": "优化-credential life",
+      "angle": "credential lifecycle场景中的功能优化",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "优化当前系统采集cookie_vault数据的性能瓶颈和失败恢复可靠性",
+        "business_result": "cookie_vault结果可被下游模块消费",
+        "prompt_main_request": "优化当前采集cookie_vault数据的传输效率和失败恢复",
+        "source_evidence": [
+          "backend/app/services/cookie_vault.py",
+          "backend/app/services/extract_rule.py"
+        ],
+        "domain_chain": {
+          "input": "cookie_vault配置数据",
+          "operation": "采集cookie_vault数据",
+          "output": "cookie_vault结果",
+          "observable": "cookie_vault采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将cookie_vault替换为通用CRUD配置表而未实现采集cookie_vault数据的流程，其跨模块数据流转约束将失效，cookie_vault采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "rule_credential_binding",
+              "statement": "凭证失效关联的抽取规则应标记为挂起状态",
+              "failure_if_omitted": "规则用失效凭证执行只会全量失败"
+            },
+            {
+              "kind": "recovery_rebind",
+              "statement": "凭证恢复后关联规则需重新验证方可启用",
+              "failure_if_omitted": "未验证规则直接启用会产生错误数据"
+            }
+          ],
+          "why_interact": "约束'凭证失效关联的抽取规则应标记为挂起状态'与'凭证恢复后关联规则需重新验证方可启用'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足凭证失效关联的抽取规则应标记为挂起状态和凭证恢复后关联规则需重新验证方可启用"
+        },
+        "module_integration": {
+          "primary_module": "cookie_vault",
+          "secondary_modules": [
+            {
+              "name": "extract_rule",
+              "role": "consumer",
+              "artifact": "凭证与抽取规则的协同失效",
+              "relationship": "extract_rule消费cookie_vault产生的凭证与抽取规则的协同失效数据产物"
+            }
+          ],
+          "data_artifact": "cookie_vault-credential lifecycle 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "凭证失效后关联规则自动挂起还是仅告警不阻断，影响采集连续性和数据质量，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "cookie_vault",
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "extract_rule",
+            "path": "backend/app/services/extract_rule.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "cookie_vault",
+          "role": "producer",
+          "artifact": "cookie_vault-credential lifecycle 数据产物",
+          "behavior": "cookie_vault服务维护credential lifecycle核心业务数据，产生cookie_vault-credential lifecycle 数据产物",
+          "path": "backend/app/services/cookie_vault.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]"
+        },
+        {
+          "module": "extract_rule",
+          "role": "consumer",
+          "artifact": "凭证与抽取规则的协同失效",
+          "behavior": "extract_rule消费cookie_vault产生的cookie_vault-credential lifecycle 数据产物进行后续处理",
+          "path": "backend/app/services/extract_rule.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"抽取模板业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"extract_rule\"\nLIST_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\", \"字段路径\", \"提取方式\", \"缺省值\", \"校验正则\", \"规则优先级\"]\nREQUIRED_FIELDS = [\"规则编号\", \"目标站点\", \"页面类型\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 34,
+      "slug": "bugfix",
+      "task_type": "Bugfix",
+      "topic": "rpa-script-orchestration",
+      "topic_name": "rpa script orchestration",
+      "family": "Bugfix-rpa script orch",
+      "angle": "rpa script orchestration场景中的缺陷修复",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "修复采集rpa_script数据时rpa_script结果出现不一致的缺陷",
+        "business_result": "rpa_script结果可被下游模块消费",
+        "prompt_main_request": "修复采集rpa_script数据时rpa_script结果不一致缺陷",
+        "source_evidence": [
+          "backend/app/services/rpa_script.py",
+          "backend/app/services/template_mgr.py"
+        ],
+        "domain_chain": {
+          "input": "rpa_script配置数据",
+          "operation": "采集rpa_script数据",
+          "output": "rpa_script结果",
+          "observable": "rpa_script采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/rpa_script.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"RPA脚本库 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rpa_script\"\nREQUIRED_FIELDS = [\"脚本编号\", \"目标应用\", \"触发事件\"]\nSTATUS_ORDER = [\"草稿\", \"测试中\", \"已投产\", \"已废弃\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将rpa_script替换为通用CRUD配置表而未实现采集rpa_script数据的流程，其跨模块数据流转约束将失效，rpa_script采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "rollback_scope",
+              "statement": "脚本回滚只能回退到上一个投产版本",
+              "failure_if_omitted": "跨版本跳回可能导致依赖不兼容"
+            },
+            {
+              "kind": "rollback_audit",
+              "statement": "每次回滚操作必须记录操作人和原因",
+              "failure_if_omitted": "无审计的回滚无法追溯变更历史"
+            }
+          ],
+          "why_interact": "约束'脚本回滚只能回退到上一个投产版本'与'每次回滚操作必须记录操作人和原因'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足脚本回滚只能回退到上一个投产版本和每次回滚操作必须记录操作人和原因"
+        },
+        "module_integration": {
+          "primary_module": "rpa_script",
+          "secondary_modules": [
+            {
+              "name": "template_mgr",
+              "role": "consumer",
+              "artifact": "脚本版本回滚",
+              "relationship": "template_mgr消费rpa_script产生的脚本版本回滚数据产物"
+            }
+          ],
+          "data_artifact": "rpa_script-rpa script orchestration 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "回滚时保留当前版本作为备份还是直接覆盖，影响再次回滚的执行速度，由设计者判断",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者判断",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "rpa_script",
+            "path": "backend/app/services/rpa_script.py",
+            "start_line": 1,
+            "end_line": 64
+          },
+          {
+            "module": "template_mgr",
+            "path": "backend/app/services/template_mgr.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "rpa_script",
+          "role": "producer",
+          "artifact": "rpa_script-rpa script orchestration 数据产物",
+          "behavior": "rpa_script服务维护rpa script orchestration核心业务数据，产生rpa_script-rpa script orchestration 数据产物",
+          "path": "backend/app/services/rpa_script.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"RPA脚本库 DAG 图服务：生成节点、边示例结构与流转规则。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"rpa_script\"\nREQUIRED_FIELDS = [\"脚本编号\", \"目标应用\", \"触发事件\"]\nSTATUS_ORDER = [\"草稿\", \"测试中\", \"已投产\", \"已废弃\"]"
+        },
+        {
+          "module": "template_mgr",
+          "role": "consumer",
+          "artifact": "脚本版本回滚",
+          "behavior": "template_mgr消费rpa_script产生的rpa_script-rpa script orchestration 数据产物进行后续处理",
+          "path": "backend/app/services/template_mgr.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"模板市场业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"template_mgr\"\nLIST_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\", \"版本号\", \"下载次数\", \"评分\", \"兼容说明\", \"发布者\"]\nREQUIRED_FIELDS = [\"模板编号\", \"适用站点\", \"模板类型\"]"
+        }
+      ]
+    },
+    {
+      "sequence": 35,
+      "slug": "development",
+      "task_type": "功能开发",
+      "topic": "site-freeze-policy",
+      "topic_name": "site freeze policy",
+      "family": "新增-site freeze pol",
+      "angle": "site freeze policy场景中的新能力构建",
+      "domain_fit": {
+        "version": 2,
+        "conclusion": "pass",
+        "main_task": "新增site_profile配置数据的采集site_profile数据能力，系统尚未形成site_profile结果链路",
+        "business_result": "site_profile结果可被下游模块消费",
+        "prompt_main_request": "新增site_profile配置数据的采集site_profile数据能力，当前尚未形成该链路，缺少site_profile结果的生成机制",
+        "source_evidence": [
+          "backend/app/services/site_profile.py",
+          "backend/app/services/cookie_vault.py"
+        ],
+        "domain_chain": {
+          "input": "site_profile配置数据",
+          "operation": "采集site_profile数据",
+          "output": "site_profile结果",
+          "observable": "site_profile采集结果可追踪"
+        },
+        "domain_anchors": [
+          {
+            "path": "backend/app/services/site_profile.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"站点画像业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"site_profile\"\nLIST_FIELDS = [\"站点编号\", \"域名\", \"编码格式\", \"反爬等级\", \"合规说明\", \"负责人\", \"接入状态\", \"最后爬取\"]\nREQUIRED_FIELDS = [\"站点编号\", \"域名\", \"编码格式\"]",
+            "supports": "operation"
+          },
+          {
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 10,
+            "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]",
+            "supports": "input"
+          }
+        ],
+        "genericization": "如果将site_profile替换为通用CRUD配置表而未实现采集site_profile数据的流程，其跨模块数据流转约束将失效，site_profile采集结果可追踪不可见",
+        "domain": "数据工程",
+        "subdirection": "数据采集、爬虫与RPA"
+      },
+      "difficulty_design": {
+        "version": 2,
+        "reasoning_challenge": {
+          "constraints": [
+            {
+              "kind": "freeze_credential_cascade",
+              "statement": "站点冻结时关联凭证应自动标记为暂停",
+              "failure_if_omitted": "冻结站点保留有效凭证存在安全隐患"
+            },
+            {
+              "kind": "thaw_credential_check",
+              "statement": "站点解冻时凭证必须重新验证后再恢复",
+              "failure_if_omitted": "过期凭证恢复会导致首轮采集失败"
+            }
+          ],
+          "why_interact": "约束'站点冻结时关联凭证应自动标记为暂停'与'站点解冻时凭证必须重新验证后再恢复'相互影响：前者决定正确性边界，后者决定恢复范围",
+          "prompt_excerpt": "必须同时满足站点冻结时关联凭证应自动标记为暂停和站点解冻时凭证必须重新验证后再恢复"
+        },
+        "module_integration": {
+          "primary_module": "site_profile",
+          "secondary_modules": [
+            {
+              "name": "cookie_vault",
+              "role": "consumer",
+              "artifact": "站点冻结与凭证联动",
+              "relationship": "cookie_vault消费site_profile产生的站点冻结与凭证联动数据产物"
+            }
+          ],
+          "data_artifact": "site_profile-site freeze policy 数据产物"
+        },
+        "open_design": {
+          "conflict_axis": "站点冻结时关联凭证暂时标记还是永久废弃，影响解冻后恢复速度和凭证管控成本，由设计者权衡后确定",
+          "option_a": "方案A",
+          "option_b": "方案B",
+          "delegation": "由设计者权衡后确定",
+          "no_pre_fix": true
+        },
+        "module_anchors": [
+          {
+            "module": "site_profile",
+            "path": "backend/app/services/site_profile.py",
+            "start_line": 1,
+            "end_line": 65
+          },
+          {
+            "module": "cookie_vault",
+            "path": "backend/app/services/cookie_vault.py",
+            "start_line": 1,
+            "end_line": 65
+          }
+        ]
+      },
+      "support_evidence": [
+        {
+          "module": "site_profile",
+          "role": "producer",
+          "artifact": "site_profile-site freeze policy 数据产物",
+          "behavior": "site_profile服务维护site freeze policy核心业务数据，产生site_profile-site freeze policy 数据产物",
+          "path": "backend/app/services/site_profile.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"站点画像业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"site_profile\"\nLIST_FIELDS = [\"站点编号\", \"域名\", \"编码格式\", \"反爬等级\", \"合规说明\", \"负责人\", \"接入状态\", \"最后爬取\"]\nREQUIRED_FIELDS = [\"站点编号\", \"域名\", \"编码格式\"]"
+        },
+        {
+          "module": "cookie_vault",
+          "role": "consumer",
+          "artifact": "站点冻结与凭证联动",
+          "behavior": "cookie_vault消费site_profile产生的site_profile-site freeze policy 数据产物进行后续处理",
+          "path": "backend/app/services/cookie_vault.py",
+          "start_line": 1,
+          "end_line": 10,
+          "excerpt": "\"\"\"凭证管理业务规则：状态流转、字段校验与筛选口径都收在这里。\"\"\"\nfrom __future__ import annotations\n\nfrom typing import Any\n\nfrom app.store import store\n\nMODULE = \"cookie_vault\"\nLIST_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\", \"UserAgent\", \"过期时间\", \"刷新策略\", \"最后验证\", \"登录方式\"]\nREQUIRED_FIELDS = [\"凭证编号\", \"关联站点\", \"Cookie文本\"]"
+        }
+      ]
+    }
+  ],
+  "base_commit": "a8c899522098b3765d4556fd9d1d54078a106b3c"
+}
