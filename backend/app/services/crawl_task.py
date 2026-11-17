@@ -8,6 +8,8 @@ from app.store import store
 
 MODULE = "crawl_task"
 REQUIRED_FIELDS = ["任务编号", "目标站点", "入口URL"]
+# 跨模块数据流需要的可追溯字段：调度窗口、任务用途、前序任务
+OPTIONAL_FIELDS = ["深度限制", "页面上限", "调度cron", "优先级", "截止时间", "调度窗口", "任务用途", "前序任务"]
 STATUS_ORDER = ["待调度", "运行中", "已完成", "已取消"]
 ACTION_RULES = {"提交调度": "运行中", "取消任务": "已取消", "归档结果": "已完成"}
 NEGATIVE_ACTIONS = []
@@ -41,6 +43,9 @@ class CrawlTaskService:
         rows = store.rows(MODULE)
         entry = {"id": max((int(r.get("id", 0)) for r in rows), default=0) + 1}
         entry.update({f: values.get(f) for f in REQUIRED_FIELDS})
+        for field in OPTIONAL_FIELDS:
+            if values.get(field) not in (None, ""):
+                entry[field] = values.get(field)
         entry["status"] = STATUS_ORDER[0]
         entry["pending"] = True
         entry["abnormal"] = False

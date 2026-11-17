@@ -26,6 +26,35 @@
       <strong>{{ selectedItem.name || selectedItem.label }}</strong> — 状态：{{ selectedItem.status }}
       <div style="margin-top:4px;">{{ selectedItem.logs || '暂无日志' }}</div>
     </div>
+
+    <!-- 续做任务批次：与定时调度、重试队列同步的窗口清单 -->
+    <section class="resume-batch-panel" data-testid="resume-batch-panel">
+      <header class="resume-batch-head">
+        <div>
+          <h3>续做任务批次</h3>
+          <p class="page-desc">失败窗口经唯一续做入口补建的任务批次；同一窗口不会覆盖上一轮已完成任务。</p>
+        </div>
+        <button class="btn" type="button" data-testid="reload-resume-batches" @click="loadResumeBatches">刷新批次</button>
+      </header>
+      <table class="data-table">
+        <thead>
+          <tr><th>批次</th><th>计划编号</th><th>窗口起始</th><th>状态</th><th>失败任务</th><th>续做任务</th><th>重试条目</th></tr>
+        </thead>
+        <tbody>
+          <tr v-for="batch in resumeBatches" :key="batch.id" :data-testid="`resume-batch-${batch.id}`">
+            <td>#{{ batch.id }}</td>
+            <td>{{ batch.plan_code }}</td>
+            <td>{{ batch.window_start }}</td>
+            <td>{{ batch.status }}</td>
+            <td>{{ batch.failed_task_id ? `#${batch.failed_task_id}` : '—' }}</td>
+            <td>{{ batch.task_id ? `#${batch.task_id}` : '—' }}</td>
+            <td>{{ batch.retry_entry_id ? `#${batch.retry_entry_id}` : '—' }}</td>
+          </tr>
+          <tr v-if="!resumeBatches.length"><td colspan="7" class="empty-state">暂无续做任务批次</td></tr>
+        </tbody>
+      </table>
+    </section>
+
     <div v-if="showCreate" class="modal-backdrop" data-testid="create-modal">
       <form class="modal" @submit.prevent="submitCreate"><h3>登记任务批次</h3>
         <label v-for="field in columns.slice(0,3)" :key="field" class="create-field"><span>{{ field }}</span><input v-model="createValues[field]" :placeholder="`请输入${field}`" required /></label>
@@ -49,11 +78,15 @@ const dateFrom = ref(''); const dateTo = ref('')
 const errorMessage = ref(''); const showCreate = ref(false)
 const createValues = ref<Record<string,string>>({})
 const allItems = ref<any[]>([])
+const resumeBatches = ref<any[]>([])
 function barLeft(item: any) { const all = allItems.value.filter(i => i.start && i.end); if(!all.length) return 0; const min = Math.min(...all.map(i => new Date(i.start).getTime())); const max = Math.max(...all.map(i => new Date(i.end).getTime())); const range = max - min || 86400000; return ((new Date(item.start).getTime() - min) / range) * 100 }
 function barWidth(item: any) { const all = allItems.value.filter(i => i.start && i.end); if(!all.length) return 20; const min = Math.min(...all.map(i => new Date(i.start).getTime())); const max = Math.max(...all.map(i => new Date(i.end).getTime())); const range = max - min || 86400000; return Math.max(5, ((new Date(item.end).getTime() - new Date(item.start).getTime()) / range) * 100) }
 function selectItem(item: any) { selectedItem.value = selectedItem.value?.id === item.id ? null : item }
 async function reload() {
   try { const res = await request(ENDPOINT); const data = await res.json(); allItems.value = data.items || []; applyFilter() } catch(e) { errorMessage.value = '加载失败' }
+}
+async function loadResumeBatches() {
+  try { const res = await request('/api/scheduler/joint/resume-batches'); if(!res.ok) throw new Error('批次加载失败'); resumeBatches.value = await res.json() } catch(e: any) { errorMessage.value = e.message }
 }
 function applyFilter() {
   let items = allItems.value
@@ -66,5 +99,10 @@ async function submitCreate() {
   try { const res = await request(ENDPOINT, { method: 'POST', body: JSON.stringify({ values: createValues.value }) }); if(!res.ok) throw new Error('创建失败'); showCreate.value = false; await reload() } catch(e: any) { errorMessage.value = e.message }
 }
 function exportRows() { window.open(`${ENDPOINT}/export`, '_blank') }
-onMounted(reload)
+onMounted(() => { reload(); loadResumeBatches() })
 </script>
+<style scoped>
+.resume-batch-panel { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px; }
+.resume-batch-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.resume-batch-head h3 { margin: 0 0 4px; font-size: 15px; }
+</style>

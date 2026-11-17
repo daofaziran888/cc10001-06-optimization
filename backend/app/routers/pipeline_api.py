@@ -22,6 +22,19 @@ class ExecuteSegmentPayload(BaseModel):
 class TriggerPlanPayload(BaseModel):
     plan_id: int
     simulate_failure: bool = False
+    window_start: str | None = None
+
+
+class ScanWindowsPayload(BaseModel):
+    scope: str = "include_due"
+    as_of: str | None = None
+    plan_ids: list[int] | None = None
+    simulate_failure: bool = False
+
+
+class ResumeWindowPayload(BaseModel):
+    trigger_id: int
+    note: str | None = None
 
 
 class AuditBatchPayload(BaseModel):
@@ -77,7 +90,11 @@ def get_pipeline_state(state_id: int) -> dict:
 
 @router.post("/scheduler/trigger")
 def trigger_plan(payload: TriggerPlanPayload) -> dict:
-    res = scheduler_engine.trigger_plan(payload.plan_id, simulate_failure=payload.simulate_failure)
+    res = scheduler_engine.trigger_plan(
+        payload.plan_id,
+        simulate_failure=payload.simulate_failure,
+        window_start=payload.window_start,
+    )
     if not res.get("ok"):
         raise HTTPException(status_code=400, detail=res.get("error"))
     return res
@@ -86,6 +103,34 @@ def trigger_plan(payload: TriggerPlanPayload) -> dict:
 @router.post("/scheduler/tick-all")
 def tick_all() -> dict:
     return scheduler_engine.tick_all()
+
+
+@router.post("/scheduler/scan")
+def scan_windows(payload: ScanWindowsPayload) -> dict:
+    """批量扫描调度窗口：成功跳过、失败续做、到期新触发。"""
+    res = scheduler_engine.scan_windows(
+        scope=payload.scope,
+        as_of=payload.as_of,
+        plan_ids=payload.plan_ids,
+        simulate_failure=payload.simulate_failure,
+    )
+    if not res.get("ok"):
+        raise HTTPException(status_code=400, detail=res.get("error"))
+    return res
+
+
+@router.get("/scheduler/windows")
+def list_windows(as_of: str | None = None) -> dict:
+    return scheduler_engine.list_windows(as_of=as_of)
+
+
+@router.post("/scheduler/resume")
+def resume_window(payload: ResumeWindowPayload) -> dict:
+    """失败窗口唯一续做入口。"""
+    res = scheduler_engine.resume_window(payload.trigger_id, note=payload.note or "")
+    if not res.get("ok"):
+        raise HTTPException(status_code=400, detail=res.get("error"))
+    return res
 
 
 @router.get("/scheduler/triggers")
@@ -99,6 +144,19 @@ def get_trigger(trigger_id: int) -> dict:
     if tg is None:
         raise HTTPException(status_code=404, detail=f"触发记录 {trigger_id} 不存在")
     return tg
+
+
+@router.get("/scheduler/resume-batches")
+def list_resume_batches() -> list:
+    return scheduler_engine.list_resume_batches()
+
+
+@router.get("/scheduler/resume-batches/{batch_id}")
+def get_resume_batch(batch_id: int) -> dict:
+    batch = scheduler_engine.get_resume_batch(batch_id)
+    if batch is None:
+        raise HTTPException(status_code=404, detail=f"续做任务批次 {batch_id} 不存在")
+    return batch
 
 
 # ---------- 质量审计 ----------

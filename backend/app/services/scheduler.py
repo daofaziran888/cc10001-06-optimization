@@ -28,6 +28,12 @@ class SchedulerService:
                 "end": end,
                 "status": str(row.get("status", STATUS_ORDER[i % len(STATUS_ORDER)])),
                 "logs": f"[{start}] 作业启动\n[{start}] 正在处理...\n[{end}] 任务{'完成' if row.get('status') == STATUS_ORDER[-1] else '进行中'}",
+                # 调度窗口口径：供页面同步扫描范围与下次执行时间
+                "plan_code": str(row.get("计划编号", "")),
+                "window_base": str(row.get("窗口基准", "")),
+                "next_run": str(row.get("下次执行", "")),
+                "last_run": str(row.get("上次执行", "")),
+                "window_interval": str(row.get("窗口间隔", "")),
             })
         return items
 

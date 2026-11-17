@@ -27,6 +27,7 @@ class Store:
             "proxy_assignments": [],   # 代理分配记录
             "cookie_rotations": [],    # 凭证轮换记录
             "scheduler_triggers": [],  # 调度触发记录
+            "scheduler_resume_batches": [],  # 续做任务批次
         }
         self._load_joint()
 
@@ -92,6 +93,10 @@ class Store:
 
     def joint_append(self, key: str, record: dict[str, Any]) -> None:
         self._joint.setdefault(key, []).append(record)
+        self._save_joint(key)
+
+    def joint_replace(self, key: str, records: list[dict[str, Any]]) -> None:
+        self._joint[key] = records
         self._save_joint(key)
 
     def joint_find(self, key: str, record_id: int) -> dict[str, Any] | None:

@@ -75,5 +75,22 @@ npm run dev
 - 列表接口统一返回 `{ items, total, page, size }`，动作接口统一返回 `{ ok, message }`。
 - 状态流转只允许在 `app/services` 里改，路由层不做业务判断。
 
+## 调度窗口扫描与续做
+
+`backend/app/services/scheduler_engine.py` 把「一次调度计划到期」抽象成调度窗口，
+窗口唯一键为 `(计划 id, 窗口起始分钟)`：
+
+- 批量扫描（`POST /api/scheduler/scan`、`POST /api/scheduler/tick-all`）读取待激活/运行中的计划、
+  已有 `scheduler_triggers` 触发记录与 `retry_queue` 重试条目，逐窗口判定：
+  成功窗口标记「已跳过」且绝不再建采集任务；失败窗口只补建一次重试条目与
+  `scheduler_resume_batches` 续做批次；到期的未记录窗口按扫描范围决定本轮或下一轮进入采集。
+- 扫描范围两种取值：`include_due`（本轮纳入刚到期窗口）、`defer_due`（下一轮再纳入）。
+  被推迟的窗口会先落一条 `待触发` 触发记录，下一轮复用同一条记录，不会生成重复窗口。
+- 续做只有一个入口 `resume_window`（`POST /api/scheduler/resume`，重试队列页
+  `POST /api/retry_queue/{id}/resume` 只是转发），续做任务批次带 `前序任务` 字段，
+  原失败任务与上一轮已完成任务都不覆盖；重复调用直接跳过。
+- 页面同步：定时调度页展示扫描范围、窗口分类与续做按钮；重试队列页展示待续做条目；
+  采集任务页展示续做任务批次。窗口合并口径由 `GET /api/scheduler/windows` 提供。
+
 领域：数据工程
 子方向：数据采集、爬虫与RPA

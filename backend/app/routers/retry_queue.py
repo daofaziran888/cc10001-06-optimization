@@ -7,14 +7,22 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
 
 from app.schemas import ActionPayload, ActionResult, EntryPayload
 from app.services.retry_queue import RetryQueueService
+from app.services.scheduler_engine import scheduler_engine
 
 router = APIRouter(prefix="/api/retry_queue", tags=["重试队列"])
 service = RetryQueueService()
 LIST_FIELDS = ["条目编号", "失败页面", "失败原因", "重试次数", "最大重试", "下次重试", "错误详情", "关联任务"]
 STATUSES = ["排队中", "重试中", "已达上限", "已恢复"]
+
+
+class ResumePayload(BaseModel):
+    """重试条目续做：转发到调度引擎的唯一续做入口。"""
+
+    note: str | None = None
 
 
 def csv_cell(value: Any) -> str:
@@ -62,9 +70,38 @@ def create_entry(payload: EntryPayload) -> ActionResult:
     return ActionResult(ok=True, message="重试条目已登记", entry=entry_or_none)
 
 
+@router.get("/joint/windows")
+def list_resume_windows(as_of: str | None = Query(default=None)) -> dict[str, Any]:
+    """失败窗口视图：列出仍可继续重试的窗口条目，供重试队列页发起续做。"""
+    window_state = scheduler_engine.list_windows(as_of=as_of)
+    pending_keys = {
+        item["window_key"]
+        for item in window_state.get("items", [])
+        if item.get("retry_entry_id") and item.get("classification") == "待续做"
+    }
+    items = [
+        row for row in service.get_entries()
+        if str(row.get("window_key", "")) in pending_keys
+    ]
+    items.sort(key=lambda row: (str(row.get("窗口起始", "")), int(row.get("id", 0))))
+    return {"items": items, "total": len(items)}
+
+
 @router.post("/{entry_id}/actions")
 def run_action(entry_id: int, payload: ActionPayload) -> ActionResult:
     entry_or_none, message = service.run_action(entry_id, payload.action)
     if entry_or_none is None:
         return ActionResult(ok=False, message=message)
     return ActionResult(ok=True, message=message, entry=entry_or_none)
+
+
+@router.post("/{entry_id}/resume")
+def resume_entry(entry_id: int, payload: ResumePayload | None = None) -> dict[str, Any]:
+    """从重试条目发起续做：内部仍只调用调度引擎的唯一续做入口。"""
+    entry = service.get_entry(entry_id)
+    if entry is None:
+        return {"ok": False, "error": f"重试条目 {entry_id} 不存在或已归档"}
+    trigger_id = entry.get("trigger_id")
+    if trigger_id in (None, ""):
+        return {"ok": False, "error": "该重试条目没有关联的调度触发记录，无法续做"}
+    return scheduler_engine.resume_window(int(trigger_id), note=(payload.note if payload else "") or "")
